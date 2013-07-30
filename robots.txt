@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://postgetme.github.io/sitemap.xml 
