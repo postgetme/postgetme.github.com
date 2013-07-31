@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 其它 | My Octopress Blog]]></title>
   <link href="http://postgetme.github.io/blog/categories/qi-ta/atom.xml" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-08-01T00:07:05+08:00</updated>
+  <updated>2013-08-01T00:10:20+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -18,7 +18,8 @@
     <link href="http://postgetme.github.io/blog/2013/07/31/my-first-article/"/>
     <updated>2013-07-31T23:31:00+08:00</updated>
     <id>http://postgetme.github.io/blog/2013/07/31/my-first-article</id>
-    <content type="html"><![CDATA[<p>module decoder38 (i_sel, i_opt, o_y);</p>
+    <content type="html"><![CDATA[<p>``` js
+module decoder38 (i_sel, i_opt, o_y);</p>
 
 <pre><code>input [2:0] i_sel;
 input i_opt;
@@ -46,7 +47,8 @@ always @ (i_sel or i_opt)
     end
 </code></pre>
 
-<p>endmodule</p>
+<p>endmodule
+```</p>
 ]]></content>
   </entry>
   
