@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 其它 | My Octopress Blog]]></title>
   <link href="http://postgetme.github.io/blog/categories/qi-ta/atom.xml" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-08-01T00:13:03+08:00</updated>
+  <updated>2013-08-01T00:17:08+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -24,7 +24,7 @@
 
 <h1>Verilog</h1>
 
-<p>``` js
+<p>``` js decoder38.v
 module decoder38 (i_sel, i_opt, o_y);</p>
 
 <pre><code>input [2:0] i_sel;
