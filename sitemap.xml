@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://postgetme.github.io/blog/archives/</loc>
+        <lastmod>2013-07-31T23:15:20+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://postgetme.github.io/feed/index.xml</loc>
+        <lastmod>2013-07-31T22:40:26+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://postgetme.github.io/</loc>
+        <lastmod>2013-07-31T23:15:20+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://postgetme.github.io/robots.txt</loc>
+        <lastmod>2013-07-31T23:14:12+08:00</lastmod>
+    </url>
+</urlset>
