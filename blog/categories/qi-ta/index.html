@@ -5,14 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Octopress Blog</title>
+  <title>Category: 其它 - My Octopress Blog</title>
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="module decoder38 (i_sel, i_opt, o_y); input [2:0] i_sel;
-input i_opt;
-output reg [7:0] o_y;
-reg [7:0] r_y; always @ (i_sel or i_opt) begin case ( &hellip;">
+  <meta name="description" content="Category: 其它">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +18,7 @@ reg [7:0] r_y; always @ (i_sel or i_opt) begin case ( &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://postgetme.github.io/">
+  <link rel="canonical" href="http://postgetme.github.ioblog/categories/qi-ta/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -68,79 +65,40 @@ reg [7:0] r_y; always @ (i_sel or i_opt) begin case ( &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article role="article">
   
-  
-  
-    <article>
-      
   <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/07/31/my-first-article/">My First Article</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-31T23:31:00+08:00" pubdate data-updated="true">Jul 31<span>st</span>, 2013</time>
-        
-      </p>
+    <h1 class="entry-title">Category: 其它</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-  <div class="entry-content"><p>module decoder38 (i_sel, i_opt, o_y);</p>
 
-<pre><code>input [2:0] i_sel;
-input i_opt;
-output reg [7:0] o_y;
-reg [7:0] r_y;
+  
+  <h2>2013</h2>
 
-always @ (i_sel or i_opt)
-    begin
-        case (i_sel)
-            3'd0: r_y = 8'b1111_1110;   //十进制表示法，二进制数可以用'_'分隔
-            3'd1: r_y = 8'b1111_1101;
-            3'd2: r_y = 8'b1111_1011;
-            3'd3: r_y = 8'b1111_0111;
-            3'd4: r_y = 8'b1110_1111;
-            3'd5: r_y = 8'b1101_1111;
-            3'd6: r_y = 8'b1011_1111;
-            3'd7: r_y = 8'b0111_1111;
-            default: r_y = 8'hff;   //十六进制表示法
-        endcase
+<article>
+  
+<h1><a href="/blog/2013/07/31/my-first-article/">my first article</a></h1>
+<time datetime="2013-07-31T23:31:00+08:00" pubdate><span class='month'>Jul</span> <span class='day'>31</span> <span class='year'>2013</span></time>
 
-        if (i_opt == 1)
-            o_y = ~r_y;
-        else
-            o_y = r_y;
-    end
-</code></pre>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/qi-ta/'>其它</a></span>
+</footer>
 
-<p>endmodule</p>
+
+</article>
+
 </div>
-  
-  
 
-
-    </article>
   
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+</article>
+
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -160,6 +118,7 @@ always @ (i_sel or i_opt)
 
   
 </aside>
+
 
     </div>
   </div>
