@@ -4,7 +4,7 @@
   <title><![CDATA[Category: verilog | postget]]></title>
   <link href="http://postgetme.github.io/blog/categories/verilog/atom.xml" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-08-01T01:32:30+08:00</updated>
+  <updated>2013-08-01T01:40:26+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[JasonLin]]></name>
@@ -24,7 +24,7 @@
 
 <h1>Verilog</h1>
 
-<p>``` JS
+<p>``` JS decoder38.v
 module decoder38 (i_sel, i_opt, o_y);</p>
 
 <pre><code>input [2:0] i_sel;
