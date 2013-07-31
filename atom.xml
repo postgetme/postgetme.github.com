@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://postgetme.github.io/atom.xml" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-08-01T00:20:07+08:00</updated>
+  <updated>2013-08-01T01:12:49+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -24,7 +24,7 @@
 
 <h1>Verilog</h1>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -50,32 +50,33 @@
 <span class='line-number'>24</span>
 <span class='line-number'>25</span>
 <span class='line-number'>26</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>module decoder38 (i_sel, i_opt, o_y);
-</span><span class='line'>    input [2:0] i_sel;
-</span><span class='line'>    input i_opt;
-</span><span class='line'>    output reg [7:0] o_y;
-</span><span class='line'>    reg [7:0] r_y;
+</pre></td><td class='code'><pre><code class='JS'><span class='line'><span class="nx">module</span> <span class="nx">decoder38</span> <span class="p">(</span><span class="nx">i_sel</span><span class="p">,</span> <span class="nx">i_opt</span><span class="p">,</span> <span class="nx">o_y</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">input</span> <span class="p">[</span><span class="mi">2</span><span class="o">:</span><span class="mi">0</span><span class="p">]</span> <span class="nx">i_sel</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">input</span> <span class="nx">i_opt</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">output</span> <span class="nx">reg</span> <span class="p">[</span><span class="mi">7</span><span class="o">:</span><span class="mi">0</span><span class="p">]</span> <span class="nx">o_y</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">reg</span> <span class="p">[</span><span class="mi">7</span><span class="o">:</span><span class="mi">0</span><span class="p">]</span> <span class="nx">r_y</span><span class="p">;</span>
 </span><span class='line'>
-</span><span class='line'>    always @ (i_sel or i_opt)
-</span><span class='line'>        begin
-</span><span class='line'>            case (i_sel)
-</span><span class='line'>                3'd0: r_y = 8'b1111_1110;   //十进制表示法，二进制数可以用'_'分隔
-</span><span class='line'>                3'd1: r_y = 8'b1111_1101;
-</span><span class='line'>                3'd2: r_y = 8'b1111_1011;
-</span><span class='line'>                3'd3: r_y = 8'b1111_0111;
-</span><span class='line'>                3'd4: r_y = 8'b1110_1111;
-</span><span class='line'>                3'd5: r_y = 8'b1101_1111;
-</span><span class='line'>                3'd6: r_y = 8'b1011_1111;
-</span><span class='line'>                3'd7: r_y = 8'b0111_1111;
-</span><span class='line'>                default: r_y = 8'hff;   //十六进制表示法
-</span><span class='line'>            endcase
-</span><span class='line'>        
-</span><span class='line'>            if (i_opt == 1)
-</span><span class='line'>                o_y = ~r_y;
-</span><span class='line'>            else
-</span><span class='line'>                o_y = r_y;
-</span><span class='line'>        end
-</span><span class='line'>endmodule</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>    <span class="nx">always</span> <span class="err">@</span> <span class="p">(</span><span class="nx">i_sel</span> <span class="nx">or</span> <span class="nx">i_opt</span><span class="p">)</span>
+</span><span class='line'>        <span class="nx">begin</span>
+</span><span class='line'>            <span class="k">case</span> <span class="p">(</span><span class="nx">i_sel</span><span class="p">)</span>
+</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d0: r_y = 8&#39;</span><span class="nx">b1111_1110</span><span class="p">;</span>   <span class="c1">//十进制表示法，二进制数可以用&#39;_&#39;分隔</span>
+</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d1: r_y = 8&#39;</span><span class="nx">b1111_1101</span><span class="p">;</span>
+</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d2: r_y = 8&#39;</span><span class="nx">b1111_1011</span><span class="p">;</span>
+</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d3: r_y = 8&#39;</span><span class="nx">b1111_0111</span><span class="p">;</span>
+</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d4: r_y = 8&#39;</span><span class="nx">b1110_1111</span><span class="p">;</span>
+</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d5: r_y = 8&#39;</span><span class="nx">b1101_1111</span><span class="p">;</span>
+</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d6: r_y = 8&#39;</span><span class="nx">b1011_1111</span><span class="p">;</span>
+</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d7: r_y = 8&#39;</span><span class="nx">b0111_1111</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">default</span><span class="o">:</span> <span class="nx">r_y</span> <span class="o">=</span> <span class="mi">8</span><span class="err">&#39;</span><span class="nx">hff</span><span class="p">;</span>   <span class="c1">//十六进制表示法</span>
+</span><span class='line'>            <span class="nx">endcase</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="nx">i_opt</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+</span><span class='line'>                <span class="nx">o_y</span> <span class="o">=</span> <span class="o">~</span><span class="nx">r_y</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">else</span>
+</span><span class='line'>                <span class="nx">o_y</span> <span class="o">=</span> <span class="nx">r_y</span><span class="p">;</span>
+</span><span class='line'>        <span class="nx">end</span>
+</span><span class='line'><span class="nx">endmodule</span>
+</span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
   </entry>
