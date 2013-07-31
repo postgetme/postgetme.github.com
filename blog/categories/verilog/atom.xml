@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: 其它 | My Octopress Blog]]></title>
-  <link href="http://postgetme.github.io/blog/categories/qi-ta/atom.xml" rel="self"/>
+  <title><![CDATA[Category: verilog | My Octopress Blog]]></title>
+  <link href="http://postgetme.github.io/blog/categories/verilog/atom.xml" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-08-01T00:17:08+08:00</updated>
+  <updated>2013-08-01T00:20:07+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -24,7 +24,7 @@
 
 <h1>Verilog</h1>
 
-<p>``` js decoder38.v
+<p>```
 module decoder38 (i_sel, i_opt, o_y);</p>
 
 <pre><code>input [2:0] i_sel;
