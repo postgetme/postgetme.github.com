@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://postgetme.github.io/atom.xml" rel="self"/>
+  <link href="http://postgetme.github.io/feed" rel="self"/>
   <link href="http://postgetme.github.io/"/>
   <updated>2013-07-31T22:39:04+08:00</updated>
   <id>http://postgetme.github.io/</id>
