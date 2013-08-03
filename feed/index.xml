@@ -4,7 +4,7 @@
   <title><![CDATA[postget]]></title>
   <link href="http://postgetme.github.io/feed" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-08-04T01:48:35+08:00</updated>
+  <updated>2013-08-04T02:23:02+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[JasonLin]]></name>
@@ -12,73 +12,5 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[my first article]]></title>
-    <link href="http://postgetme.github.io/blog/2013/07/31/my-first-article/"/>
-    <updated>2013-07-31T23:31:00+08:00</updated>
-    <id>http://postgetme.github.io/blog/2013/07/31/my-first-article</id>
-    <content type="html"><![CDATA[<h1>RTL</h1>
-
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E5%86%99%E6%B3%95/decoder38_1.png" alt="RTL" /></p>
-
-<h1>Verilog</h1>
-
-<figure class='code'><figcaption><span>decoder38.v</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-</pre></td><td class='code'><pre><code class='JS'><span class='line'><span class="nx">module</span> <span class="nx">decoder38</span> <span class="p">(</span><span class="nx">i_sel</span><span class="p">,</span> <span class="nx">i_opt</span><span class="p">,</span> <span class="nx">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="nx">input</span> <span class="p">[</span><span class="mi">2</span><span class="o">:</span><span class="mi">0</span><span class="p">]</span> <span class="nx">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">input</span> <span class="nx">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">output</span> <span class="nx">reg</span> <span class="p">[</span><span class="mi">7</span><span class="o">:</span><span class="mi">0</span><span class="p">]</span> <span class="nx">o_y</span><span class="p">;</span>
-</span><span class='line'>    <span class="nx">reg</span> <span class="p">[</span><span class="mi">7</span><span class="o">:</span><span class="mi">0</span><span class="p">]</span> <span class="nx">r_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="nx">always</span> <span class="err">@</span> <span class="p">(</span><span class="nx">i_sel</span> <span class="nx">or</span> <span class="nx">i_opt</span><span class="p">)</span>
-</span><span class='line'>        <span class="nx">begin</span>
-</span><span class='line'>            <span class="k">case</span> <span class="p">(</span><span class="nx">i_sel</span><span class="p">)</span>
-</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d0: r_y = 8&#39;</span><span class="nx">b1111_1110</span><span class="p">;</span>   <span class="c1">//十进制表示法，二进制数可以用&#39;_&#39;分隔</span>
-</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d1: r_y = 8&#39;</span><span class="nx">b1111_1101</span><span class="p">;</span>
-</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d2: r_y = 8&#39;</span><span class="nx">b1111_1011</span><span class="p">;</span>
-</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d3: r_y = 8&#39;</span><span class="nx">b1111_0111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d4: r_y = 8&#39;</span><span class="nx">b1110_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d5: r_y = 8&#39;</span><span class="nx">b1101_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d6: r_y = 8&#39;</span><span class="nx">b1011_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mi">3</span><span class="s1">&#39;d7: r_y = 8&#39;</span><span class="nx">b0111_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="k">default</span><span class="o">:</span> <span class="nx">r_y</span> <span class="o">=</span> <span class="mi">8</span><span class="err">&#39;</span><span class="nx">hff</span><span class="p">;</span>   <span class="c1">//十六进制表示法</span>
-</span><span class='line'>            <span class="nx">endcase</span>
-</span><span class='line'>
-</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="nx">i_opt</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
-</span><span class='line'>                <span class="nx">o_y</span> <span class="o">=</span> <span class="o">~</span><span class="nx">r_y</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">else</span>
-</span><span class='line'>                <span class="nx">o_y</span> <span class="o">=</span> <span class="nx">r_y</span><span class="p">;</span>
-</span><span class='line'>        <span class="nx">end</span>
-</span><span class='line'><span class="nx">endmodule</span>
-</span></code></pre></td></tr></table></div></figure>
-
-]]></content>
-  </entry>
   
 </feed>
