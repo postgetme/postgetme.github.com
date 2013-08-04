@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fpga | postget]]></title>
   <link href="http://postgetme.github.io/blog/categories/fpga/atom.xml" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-08-05T00:10:49+08:00</updated>
+  <updated>2013-08-05T00:11:39+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[JasonLin]]></name>
@@ -20,7 +20,7 @@
     <id>http://postgetme.github.io/blog/2013/08/04/38yi-ma-qi-de-10chong-xie-fa</id>
     <content type="html"><![CDATA[<h2>RTL</h2>
 
-<p>![image]h(<a href="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E5%86%99%E6%B3%95/decoder38_1.png">https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E5%86%99%E6%B3%95/decoder38_1.png</a>)</p>
+<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E5%86%99%E6%B3%95/decoder38_1.png" alt="image" /></p>
 
 <h2>Verilog</h2>
 
