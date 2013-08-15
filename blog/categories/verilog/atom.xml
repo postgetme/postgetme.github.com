@@ -4,7 +4,7 @@
   <title><![CDATA[Category: verilog | postget]]></title>
   <link href="http://postgetme.github.io/blog/categories/verilog/atom.xml" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-08-16T01:48:41+08:00</updated>
+  <updated>2013-08-16T02:14:26+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -589,7 +589,26 @@
     <link href="http://postgetme.github.io/blog/2013/08/04/decoder38/"/>
     <updated>2013-08-04T21:30:00+08:00</updated>
     <id>http://postgetme.github.io/blog/2013/08/04/decoder38</id>
-    <content type="html"><![CDATA[<h2 id="decoder38_1">1.标准写法</h2>
+    <content type="html"><![CDATA[<ol>
+<li><a href="#decoder38_1">标准写法</a></li>
+<li><a href="#decoder38_2">两个always</a></li>
+<li><a href="#decoder38_3">一个always搞定</a></li>
+<li><a href="#decoder38_4">if else结构</a></li>
+<li><a href="#decoder38_5">很长的assign</a></li>
+<li><a href="#decoder38_6">for循环写法1</a></li>
+<li><a href="#decoder38_7">for循环写法2</a></li>
+<li><a href="#decoder38_8">两行代码搞定</a></li>
+<li><a href="#decoder38_9">一行代码搞定</a></li>
+<li><a href="#decoder38_10">使用function</a></li>
+<li><a href="#decoder38_11">使用task</a></li>
+<li><a href="#decoder38_12">调用module</a></li>
+<li><a href="#decoder38_13">原理图方式</a></li>
+<li><a href="#decoder38_14">真值表方式</a></li>
+<li><a href="#decoder38_15">门级描述</a></li>
+</ol>
+
+
+<h2 id="decoder38_1">1.标准写法</h2>
 
 
 <h3>Verilog</h3>
@@ -618,6 +637,7 @@
 <span class='line-number'>21</span>
 <span class='line-number'>22</span>
 <span class='line-number'>23</span>
+<span class='line-number'>24</span>
 </pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_1</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
 </span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
 </span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
@@ -640,14 +660,13 @@
 </span><span class='line'>        <span class="k">end</span>
 </span><span class='line'>
 </span><span class='line'>    <span class="k">assign</span> <span class="n">o_y</span> <span class="o">=</span> <span class="p">(</span><span class="n">i_opt</span> <span class="o">==</span> <span class="mh">1</span><span class="p">)</span> <span class="o">?</span> <span class="o">~</span><span class="n">r_y</span> <span class="o">:</span> <span class="n">r_y</span><span class="p">;</span>
+</span><span class='line'>
 </span><span class='line'><span class="k">endmodule</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h3>RTL</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_1_rtl.png" alt="image" /></p>
-
-<p>未完待续&hellip;</p>
+<p>![image](<a href="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_1_rtl.pn3">https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_1_rtl.pn3</a></p>
 ]]></content>
   </entry>
   

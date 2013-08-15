@@ -20,4 +20,5 @@ module decoder38_1 (i_sel, i_opt, o_y);
         end
         
     assign o_y = (i_opt == 1) ? ~r_y : r_y;
+
 endmodule

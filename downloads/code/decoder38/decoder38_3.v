@@ -17,10 +17,7 @@ module decoder38_3 (i_sel, i_opt, o_y);
                 3'd7: r_y = 8'b0111_1111;
                 default: r_y = 8'hff;   //十六进制表示法
             endcase
-        end
         
-    always @ (i_opt or r_y)     //此处需包含r_y，否则会有编译警告
-        begin
             if (i_opt == 1)
                 o_y = ~r_y;
             else

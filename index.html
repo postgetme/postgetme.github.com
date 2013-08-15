@@ -738,7 +738,26 @@ module &hellip;">
   </header>
 
 
-  <div class="entry-content"><h2 id="decoder38_1">1.标准写法</h2>
+  <div class="entry-content"><ol>
+<li><a href="#decoder38_1">标准写法</a></li>
+<li><a href="#decoder38_2">两个always</a></li>
+<li><a href="#decoder38_3">一个always搞定</a></li>
+<li><a href="#decoder38_4">if else结构</a></li>
+<li><a href="#decoder38_5">很长的assign</a></li>
+<li><a href="#decoder38_6">for循环写法1</a></li>
+<li><a href="#decoder38_7">for循环写法2</a></li>
+<li><a href="#decoder38_8">两行代码搞定</a></li>
+<li><a href="#decoder38_9">一行代码搞定</a></li>
+<li><a href="#decoder38_10">使用function</a></li>
+<li><a href="#decoder38_11">使用task</a></li>
+<li><a href="#decoder38_12">调用module</a></li>
+<li><a href="#decoder38_13">原理图方式</a></li>
+<li><a href="#decoder38_14">真值表方式</a></li>
+<li><a href="#decoder38_15">门级描述</a></li>
+</ol>
+
+
+<h2 id="decoder38_1">1.标准写法</h2>
 
 
 <h3>Verilog</h3>
@@ -767,6 +786,7 @@ module &hellip;">
 <span class='line-number'>21</span>
 <span class='line-number'>22</span>
 <span class='line-number'>23</span>
+<span class='line-number'>24</span>
 </pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_1</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
 </span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
 </span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
@@ -789,15 +809,14 @@ module &hellip;">
 </span><span class='line'>        <span class="k">end</span>
 </span><span class='line'>
 </span><span class='line'>    <span class="k">assign</span> <span class="n">o_y</span> <span class="o">=</span> <span class="p">(</span><span class="n">i_opt</span> <span class="o">==</span> <span class="mh">1</span><span class="p">)</span> <span class="o">?</span> <span class="o">~</span><span class="n">r_y</span> <span class="o">:</span> <span class="n">r_y</span><span class="p">;</span>
+</span><span class='line'>
 </span><span class='line'><span class="k">endmodule</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
 <h3>RTL</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_1_rtl.png" alt="image" /></p>
-
-<p>未完待续&hellip;</p>
+<p>![image](<a href="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_1_rtl.pn3">https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_1_rtl.pn3</a></p>
 </div>
   
   
@@ -860,7 +879,7 @@ Like, seriously, a <em>LOT</em> of text</strong></p>
 
 <h4>Links and Email</h4>
 
-<p>An email <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#101;&#x78;&#97;&#x6d;&#x70;&#108;&#101;&#64;&#x65;&#120;&#97;&#109;&#x70;&#108;&#101;&#46;&#x63;&#111;&#109;">&#x65;&#x78;&#97;&#109;&#112;&#x6c;&#x65;&#64;&#x65;&#x78;&#97;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;</a> link.</p>
+<p>An email <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#101;&#120;&#97;&#109;&#112;&#x6c;&#101;&#x40;&#101;&#120;&#x61;&#109;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#x65;&#120;&#97;&#109;&#112;&#x6c;&#101;&#x40;&#101;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#x2e;&#x63;&#x6f;&#x6d;</a> link.</p>
 
 <p>Simple inline link <a href="http://chenluois.com">http://chenluois.com</a>, another inline link <a href="http://smallerapp.com">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">Resize</a>.</p>
 
