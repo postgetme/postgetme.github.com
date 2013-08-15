@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fpga | postget]]></title>
   <link href="http://postgetme.github.io/blog/categories/fpga/atom.xml" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-08-16T00:07:24+08:00</updated>
+  <updated>2013-08-16T01:47:56+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -581,68 +581,6 @@
 <h3>Simulation</h3>
 
 <p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_8_simulation.png" alt="image" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[38译码器的15种写法]]></title>
-    <link href="http://postgetme.github.io/blog/2013/08/04/decoder38/"/>
-    <updated>2013-08-04T21:30:00+08:00</updated>
-    <id>http://postgetme.github.io/blog/2013/08/04/decoder38</id>
-    <content type="html"><![CDATA[<h2>Verilog</h2>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span> (decoder38_1.v)</span> <a href='/downloads/code/decoder38/decoder38_1.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_1</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>    <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">begin</span>
-</span><span class='line'>            <span class="k">case</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">)</span>
-</span><span class='line'>                <span class="mh">3&#39;b000</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b11111110</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3&#39;b001</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b11111101</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3&#39;b010</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b11111011</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3&#39;b011</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b11110111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3&#39;b100</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b11101111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3&#39;b101</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b11011111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3&#39;b110</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b10111111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3&#39;b111</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b01111111</span><span class="p">;</span>
-</span><span class='line'>                <span class="k">default</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b11111111</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">endcase</span>
-</span><span class='line'>        <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">assign</span> <span class="n">o_y</span> <span class="o">=</span> <span class="p">(</span><span class="n">i_opt</span> <span class="o">==</span> <span class="mh">1</span><span class="p">)</span> <span class="o">?</span> <span class="o">~</span><span class="n">r_y</span> <span class="o">:</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<h2>RTL</h2>
-
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E5%86%99%E6%B3%95/decoder38_1.png" alt="image" /></p>
 ]]></content>
   </entry>
   
