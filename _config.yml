@@ -3,9 +3,10 @@
 # ----------------------- #
 
 url: http://postgetme.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: postget
+#subtitle: Efforts is harvest.
+subtitle:  Everything I have learned is to explain this world more.
+author: MeiLin
 simple_search: http://google.com/search
 description:
 
@@ -69,8 +70,8 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
-twitter_tweet_button: true
+twitter_user: postgetme
+twitter_tweet_button: false
 
 # Google +1
 google_plus_one: false
@@ -90,11 +91,11 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: postget
+disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-42942801-1
 
 # Facebook Like
 facebook_like: false
