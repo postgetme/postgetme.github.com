@@ -1,4 +1,4 @@
-module base_decoder38 (i_sel, o_y);
+module decoder38_12_base (i_sel, o_y);
     input [2:0] i_sel;
     output reg [7:0] o_y;
     
@@ -13,6 +13,7 @@ module base_decoder38 (i_sel, o_y);
                 3'd5: o_y = 8'b1101_1111;
                 3'd6: o_y = 8'b1011_1111;
                 3'd7: o_y = 8'b0111_1111;
+                default: o_y = 8'b1111_1111;
             endcase
         end
         

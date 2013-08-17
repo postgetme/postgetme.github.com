@@ -6,7 +6,7 @@ module decoder38_4 (i_sel, i_opt, o_y);
 
     always @ (i_sel or i_opt)
         begin
-            if (i_sel == 3'd0)      //使用if else会产生优先级逻辑
+            if (i_sel == 3'd0)
                 r_y = 8'b1111_1110;
             else if (i_sel == 3'd1)
                 r_y = 8'b1111_1101;
@@ -23,12 +23,9 @@ module decoder38_4 (i_sel, i_opt, o_y);
             else if (i_sel == 3'd7)
                 r_y = 8'b0111_1111;
             else
-                r_y = 8'hff;    //需要else，否则会生成锁在器
-        end
-        
-    always @ (i_opt or r_y)
-        begin
-            if (i_opt == 1)
+                r_y = 8'hff;
+            
+            if (i_opt == 1'b1)
                 o_y = ~r_y;
             else
                 o_y = r_y;

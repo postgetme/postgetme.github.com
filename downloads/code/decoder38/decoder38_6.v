@@ -3,7 +3,7 @@ module decoder38_6 (i_sel, i_opt, o_y);
     input i_opt;
     output [7:0] o_y;
     reg [7:0] r_y;
-    integer i;    
+    integer i;
     
     always @ (i_sel)
         begin
@@ -16,6 +16,6 @@ module decoder38_6 (i_sel, i_opt, o_y);
                 end
         end
 
-    assign o_y = (i_opt == 1) ? ~r_y : r_y;
+    assign o_y = (i_opt == 1'b1) ? ~r_y : r_y;
 
 endmodule
