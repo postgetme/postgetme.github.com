@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fpga | postget]]></title>
   <link href="http://postgetme.github.io/blog/categories/fpga/atom.xml" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-08-18T01:01:32+08:00</updated>
+  <updated>2013-08-18T04:02:04+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -603,7 +603,7 @@
 <li><a href="#decoder38_11">调用task</a></li>
 <li><a href="#decoder38_12">调用module</a></li>
 <li><a href="#decoder38_13">原理图方式</a></li>
-<li><a href="#decoder38_14">真值表方式</a></li>
+<li><a href="#decoder38_14">AHDL真值表描述</a></li>
 <li><a href="#decoder38_15">门级描述</a></li>
 </ol>
 
@@ -1302,14 +1302,53 @@
 
 <h3>原理图</h3>
 
+<p><a href="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_13_bdf.png"><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_13_bdf.png" alt="image" /></a></p>
+
 <h3>Rtl</h3>
 
 <p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_13_rtl.png" alt="image" /></p>
 
-<h2 id="decoder38_14">14.真值表方式</h2>
+<h2 id="decoder38_14">14.AHDL真值表描述</h2>
 
 
-<h3>真值表</h3>
+<h3>AHDL</h3>
+
+<p>``` text (decoder38_14.tdf) <a href="http://postget.me/downloads/code/decoder38/decoder38_14.tdf">http://postget.me/downloads/code/decoder38/decoder38_14.tdf</a> (download)
+SUBDESIGN decoder38_14
+(</p>
+
+<pre><code>i_sel[2..0] : INPUT;
+i_opt : INPUT;
+o_y[7..0] : OUTPUT;
+</code></pre>
+
+<p>)</p>
+
+<p>BEGIN</p>
+
+<pre><code>TABLE
+    i_sel[2..0], i_opt =&gt; o_y[7..0];
+    0, 0 =&gt; B"11111110";
+    1, 0 =&gt; B"11111101";
+    2, 0 =&gt; B"11111011";
+    3, 0 =&gt; B"11110111";
+    4, 0 =&gt; B"11101111";
+    5, 0 =&gt; B"11011111";
+    6, 0 =&gt; B"10111111";
+    7, 0 =&gt; B"01111111";
+    0, 1 =&gt; B"00000001";
+    1, 1 =&gt; B"00000010";
+    2, 1 =&gt; B"00000100";
+    3, 1 =&gt; B"00001000";
+    4, 1 =&gt; B"00010000";
+    5, 1 =&gt; B"00100000";
+    6, 1 =&gt; B"01000000";
+    7, 1 =&gt; B"10000000";
+END TABLE;
+</code></pre>
+
+<p>END;
+```</p>
 
 <h3>Rtl</h3>
 
@@ -1320,26 +1359,15 @@
 
 <h3>Verilog</h3>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span> (decoder38_15.v)</span> <a href='/downloads/code/decoder38/decoder38_15.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_15</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>    <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>待续</p>
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_15_rtl.png" alt="image" /></p>
+<p>待续</p>
+
+<h3>Simulation</h3>
+
+<p>待续</p>
 ]]></content>
   </entry>
   
