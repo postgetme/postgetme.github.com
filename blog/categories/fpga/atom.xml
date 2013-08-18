@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fpga | postget]]></title>
   <link href="http://postgetme.github.io/blog/categories/fpga/atom.xml" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-08-18T23:46:15+08:00</updated>
+  <updated>2013-08-18T23:55:17+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -591,7 +591,7 @@
     <link href="http://postgetme.github.io/blog/2013/08/04/decoder38/"/>
     <updated>2013-08-04T21:30:00+08:00</updated>
     <id>http://postgetme.github.io/blog/2013/08/04/decoder38</id>
-    <content type="html"><![CDATA[<p>本文不断变换写法来实现同一个38译码器，目的是通过此过程来快速学习Verilog语言。为了实现更多的写法变化以及覆盖更多的Verilog语法要点，我给基本的38译码器增加了一个<code>i_opt</code>信号用来控制输出的反转。本文中所有的例子都是可综合的，并通过了开发板验证。</p>
+    <content type="html"><![CDATA[<p>本文不断变换写法实现一个38译码器，目的是想通过此过程来快速掌握Verilog语法特点。为了实现更多的写法变化以及覆盖更多的Verilog语法要点，我给通常的38译码器增加了一个<code>i_opt</code>信号用来控制输出是否反转。文中所有的例子都是可综合的，且通过了开发板验。</p>
 
 <h2>索引</h2>
 
