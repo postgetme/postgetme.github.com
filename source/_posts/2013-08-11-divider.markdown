@@ -5,16 +5,19 @@ date: 2013-08-11 15:17
 comments: true
 categories: verilog fpga
 ---
-1. [D触发器2分频](#divider_1)
-2. [计数器2分频](#divider_2)
-3. [D触发器4分频](#divider_3)
-4. [计数器4分频](#divider_4)
-5. [计数器6分频写法1](#divider_5)
-6. [计数器6分频写法2](#divider_6)
-7. [非等占空比3分频](#divider_7)
-8. [等占空比3分频](#divider_8)
 
-<h2 id="divider_1">1.D触发器2分频</h2>
+##索引
+
+- [D触发器2分频](#divider_1)
+- [计数器2分频](#divider_2)
+- [D触发器4分频](#divider_3)
+- [计数器4分频](#divider_4)
+- [计数器6分频写法1](#divider_5)
+- [计数器6分频写法2](#divider_6)
+- [非等占空比3分频](#divider_7)
+- [等占空比3分频](#divider_8)
+
+<h2 id="divider_1">D触发器2分频</h2>
 
 ###Verilog
 {% include_code divider/divider_1.v%}
@@ -25,7 +28,7 @@ categories: verilog fpga
 ###Simulation
 ![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_1_simulation.png)
 
-<h2 id="divider_2">2.计数器2分频</h2>
+<h2 id="divider_2">计数器2分频</h2>
 
 ###Verilog
 {% include_code divider/divider_2.v%}
@@ -36,7 +39,7 @@ categories: verilog fpga
 ###Simulation
 ![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_2_simulation.png)
 
-<h2 id="divider_3">3.D触发器4分频</h2>
+<h2 id="divider_3">D触发器4分频</h2>
 
 ###Verilog
 {% include_code divider/divider_3.v%}
@@ -47,7 +50,7 @@ categories: verilog fpga
 ###Simulation
 ![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_3_simulation.png)
 
-<h2 id="divider_4">4.计数器4分频</h2>
+<h2 id="divider_4">计数器4分频</h2>
 
 ###Verilog
 {% include_code divider/divider_4.v%}
@@ -58,7 +61,7 @@ categories: verilog fpga
 ###Simulation
 ![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_4_simulation.png)
 
-<h2 id="divider_5">5.计数器6分频写法1</h2>
+<h2 id="divider_5">计数器6分频写法1</h2>
 
 ###Verilog
 {% include_code divider/divider_5.v%}
@@ -69,7 +72,7 @@ categories: verilog fpga
 ###Simulation
 ![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_5_simulation.png)
 
-<h2 id="divider_6">6.计数器6分频写法2</h2>
+<h2 id="divider_6">计数器6分频写法2</h2>
 
 ###Verilog
 {% include_code divider/divider_6.v%}
@@ -80,7 +83,7 @@ categories: verilog fpga
 ###Simulation
 ![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_6_simulation.png)
 
-<h2 id="divider_7">7.非等占空比3分频</h2>
+<h2 id="divider_7">非等占空比3分频</h2>
 
 ###Verilog
 {% include_code divider/divider_7.v%}
@@ -91,7 +94,7 @@ categories: verilog fpga
 ###Simulation
 ![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_7_simulation.png)
 
-<h2 id="divider_8">8.等占空比3分频</h2>
+<h2 id="divider_8">等占空比3分频</h2>
 
 ###Verilog
 {% include_code divider/divider_8.v%}
