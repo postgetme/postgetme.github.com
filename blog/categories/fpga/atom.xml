@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fpga | postget]]></title>
   <link href="http://postgetme.github.io/blog/categories/fpga/atom.xml" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-09-01T02:03:24+08:00</updated>
+  <updated>2013-09-01T02:06:47+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -18,18 +18,18 @@
     <link href="http://postgetme.github.io/blog/2013/08/31/bus-expand/"/>
     <updated>2013-08-31T15:01:00+08:00</updated>
     <id>http://postgetme.github.io/blog/2013/08/31/bus-expand</id>
-    <content type="html"><![CDATA[<p><blockquote><p>周三拍的开发板，139元，周五收到，今天做完实验。这个开发板5年前要800元，我那时还有过一块，说来话长。。。</p></blockquote></p>
+    <content type="html"><![CDATA[<p><blockquote><p>周三拍的开发板（139元)，周五收到，今天做完实验。这个开发板5年前要800元，我那时还有过一块。。。</p></blockquote></p>
 
 <p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/board.jpg" alt="image" /></p>
 
 <h3>引脚整理</h3>
 
-<p>核心板加主板形式的开发板，很头疼的一件事就是查找引脚对应关系。gi正准备在纸上列个表格的，突然想起前不久看到过一个做表格的gem，于是就想顺便玩玩这个gem。弄了好半都没有搞定怎么把两个表格横向拼在一起（我Ruby刚学，最近又有好久没学了），最后只好用了<code>paste</code>命令。
+<p>核心板加主板形式的开发板，很头疼的一件事就是查找引脚对应关系。正准备在纸上列个表格的，突然想起前不久看到过一个做表格的gem，于是就想顺便玩玩这个gem。弄了好半都没有搞定怎么把两个表格横向拼在一起（我Ruby刚学，最近又有好久没学了），最后只好用了<code>paste</code>命令。
 <img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/screen.png" alt="image" /></p>
 
 <h3>CPU程序</h3>
 
-<p>简单的测试程序。我是有多久没玩过51了？8051访问外部地址空间的写法我搜罗了一下，大概有3种，见注释部分。
+<p>简单的测试程序。我是有多久没玩过51了？8051访问外部地址空间的写法我搜罗了一下，大概有3种，见注释掉的部分。
 <div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span> (bus_expand.c)</span> <a href='/downloads/code/bus_expand/bus_expand.c'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
