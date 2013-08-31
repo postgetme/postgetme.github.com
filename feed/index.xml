@@ -4,7 +4,7 @@
   <title><![CDATA[postget]]></title>
   <link href="http://postgetme.github.io/feed" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-09-01T02:06:47+08:00</updated>
+  <updated>2013-09-01T02:10:43+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -30,7 +30,7 @@
 
 <h3>CPU程序</h3>
 
-<p>简单的测试程序。我是有多久没玩过51了？8051访问外部地址空间的写法我搜罗了一下，大概有3种，见注释掉的部分。</p>
+<p>简单的测试程序。8051访问外部地址空间的写法我搜罗了一下，大概有3种，见注释掉的部分。</p>
 
 <figure class='code'><figcaption><span> (bus_expand.c)</span> <a href='http://postgetme.github.io/downloads/code/bus_expand/bus_expand.c'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -262,7 +262,7 @@
 
 <h3>Tcl</h3>
 
-<p>第一次用Tcl来配制引脚，没想到是这么简单和方便。</p>
+<p>第一次用Tcl来配置引脚，没想到是这么简单和方便。</p>
 
 <figure class='code'><figcaption><span> (bus_expand.tcl)</span> <a href='http://postgetme.github.io/downloads/code/bus_expand/bus_expand.tcl'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -1865,7 +1865,7 @@ Like, seriously, a <em>LOT</em> of text</strong></p>
 
 <h4>Links and Email</h4>
 
-<p>An email <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#101;&#120;&#97;&#x6d;&#112;&#x6c;&#x65;&#x40;&#x65;&#x78;&#97;&#109;&#112;&#x6c;&#101;&#x2e;&#99;&#x6f;&#x6d;">&#x65;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#64;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;</a> link.</p>
+<p>An email <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#101;&#120;&#x61;&#109;&#112;&#108;&#101;&#x40;&#101;&#120;&#x61;&#109;&#112;&#108;&#x65;&#x2e;&#99;&#x6f;&#x6d;">&#x65;&#x78;&#97;&#109;&#112;&#108;&#101;&#x40;&#101;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#x63;&#111;&#x6d;</a> link.</p>
 
 <p>Simple inline link <a href="http://chenluois.com">http://chenluois.com</a>, another inline link <a href="http://smallerapp.com">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">Resize</a>.</p>
 
