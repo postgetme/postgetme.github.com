@@ -4,7 +4,7 @@
   <title><![CDATA[postget]]></title>
   <link href="http://postgetme.github.io/feed" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-09-01T02:10:43+08:00</updated>
+  <updated>2013-09-01T02:14:20+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -14,11 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[总线扩展实验总结]]></title>
+    <title type="html"><![CDATA[139元的总线扩展实验]]></title>
     <link href="http://postgetme.github.io/blog/2013/08/31/bus-expand/"/>
     <updated>2013-08-31T15:01:00+08:00</updated>
     <id>http://postgetme.github.io/blog/2013/08/31/bus-expand</id>
-    <content type="html"><![CDATA[<blockquote><p>周三拍的开发板（139元)，周五收到，今天做完实验。这个开发板5年前要800元，我那时还有过一块。。。</p></blockquote>
+    <content type="html"><![CDATA[<blockquote><p>周三拍的开发板，139元，周五收到，今天做完实验。这个开发板5年前要800元，我那时还有过一块的。。。</p></blockquote>
 
 
 <p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/board.jpg" alt="image" /></p>
@@ -1865,7 +1865,7 @@ Like, seriously, a <em>LOT</em> of text</strong></p>
 
 <h4>Links and Email</h4>
 
-<p>An email <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#101;&#120;&#x61;&#109;&#112;&#108;&#101;&#x40;&#101;&#120;&#x61;&#109;&#112;&#108;&#x65;&#x2e;&#99;&#x6f;&#x6d;">&#x65;&#x78;&#97;&#109;&#112;&#108;&#101;&#x40;&#101;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#x63;&#111;&#x6d;</a> link.</p>
+<p>An email <a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#x65;&#120;&#x61;&#109;&#112;&#108;&#x65;&#64;&#x65;&#x78;&#x61;&#109;&#112;&#108;&#101;&#x2e;&#99;&#x6f;&#109;">&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#x65;&#x40;&#101;&#120;&#97;&#109;&#x70;&#x6c;&#101;&#46;&#x63;&#111;&#x6d;</a> link.</p>
 
 <p>Simple inline link <a href="http://chenluois.com">http://chenluois.com</a>, another inline link <a href="http://smallerapp.com">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">Resize</a>.</p>
 
