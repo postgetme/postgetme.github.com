@@ -4,7 +4,7 @@
   <title><![CDATA[Category: verilog | postget]]></title>
   <link href="http://postgetme.github.io/blog/categories/verilog/atom.xml" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-09-01T10:13:56+08:00</updated>
+  <updated>2013-09-01T10:36:11+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -18,18 +18,18 @@
     <link href="http://postgetme.github.io/blog/2013/08/31/bus-expand/"/>
     <updated>2013-08-31T15:01:00+08:00</updated>
     <id>http://postgetme.github.io/blog/2013/08/31/bus-expand</id>
-    <content type="html"><![CDATA[<p><blockquote><p>做这个实验，前后准备了大概一个星期，先是搜集和熟悉资料，然后对比了几种不同的写法，最后打算做个实验来验证一下，原来利用手头上已有的开发板是至少可以搭建出两套实验环境的，但我嫌太麻烦，需要飞很多线，所以最后还是在淘宝找来了现成的开发板，139元。周三拍的，周五收到，周六顺利完成实验。</p></blockquote></p>
+    <content type="html"><![CDATA[<p><blockquote><p>做这个实验，前后准备了大概一个星期，先是搜集资料和熟悉资料，然后对比了几种不同的写法，最后打算做个实验来验证一下。原本利用手头上已有的开发板是至少可以搭建出两套实验环境的，但我嫌太麻烦，需要飞很多线，所以最后还是在淘宝找来了现成的开发板，139元，周三拍的，周五收到，周六顺利完成实验。</p></blockquote></p>
 
 <p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/board.jpg" alt="image" /></p>
 
 <h3>引脚整理</h3>
 
-<p>核心板加主板形式的开发板，很讨厌的一件事情就是查找引脚对应关系，正准备在纸上画个表格的，突然想起前不久看到过一个做表格的gem，正好可以试试。弄了好半都没有搞定怎么把两个表格横向拼在一起，最后只好用了<code>paste</code>命令。
+<p>核心板加主板形式的开发板，很讨厌的一件事情就是查找引脚对应关系，正准备在纸上画个表格的，突然想起前不久看到过一个做表格的gem，正好可以试试。弄了好半都没有搞定怎么用Ruby把两个表格横向拼在一起，最后只好用了<code>paste</code>命令。
 <img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/screen.png" alt="image" /></p>
 
 <h3>CPU程序</h3>
 
-<p>简单的测试程序。8051访问外部地址空间的写法我搜集了一下，大概有3种，见注释掉的部分。
+<p>简单的测试程序。8051访问外部地址空间的写法搜集了一下，大概有3种，见注释掉的部分。
 <div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span> (bus_expand.c)</span> <a href='/downloads/code/bus_expand/bus_expand.c'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -341,7 +341,8 @@
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/bus_expand_rtl.png" alt="image" /></p>
+<p>看到Rtl才发现其实真的很简单。
+<img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/bus_expand_rtl.png" alt="image" /></p>
 ]]></content>
   </entry>
   

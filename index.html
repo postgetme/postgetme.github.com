@@ -9,7 +9,7 @@
   <meta name="author" content="MeiLin">
 
   
-  <meta name="description" content="做这个实验，前后准备了大概一个星期，先是搜集和熟悉资料，然后对比了几种不同的写法，最后打算做个实验来验证一下，原来利用手头上已有的开发板是至少可以搭建出两套实验环境的，但我嫌太麻烦，需要飞很多线，所以最后还是在淘宝找来了现成的开发板，139元。周三拍的，周五收到，周六顺利完成实验。 引脚整理 &hellip;">
+  <meta name="description" content="做这个实验，前后准备了大概一个星期，先是搜集资料和熟悉资料，然后对比了几种不同的写法，最后打算做个实验来验证一下。原本利用手头上已有的开发板是至少可以搭建出两套实验环境的，但我嫌太麻烦，需要飞很多线，所以最后还是在淘宝找来了现成的开发板，139元，周三拍的，周五收到，周六顺利完成实验。 引脚整理 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -109,19 +109,19 @@
   </header>
 
 
-  <div class="entry-content"><blockquote><p>做这个实验，前后准备了大概一个星期，先是搜集和熟悉资料，然后对比了几种不同的写法，最后打算做个实验来验证一下，原来利用手头上已有的开发板是至少可以搭建出两套实验环境的，但我嫌太麻烦，需要飞很多线，所以最后还是在淘宝找来了现成的开发板，139元。周三拍的，周五收到，周六顺利完成实验。</p></blockquote>
+  <div class="entry-content"><blockquote><p>做这个实验，前后准备了大概一个星期，先是搜集资料和熟悉资料，然后对比了几种不同的写法，最后打算做个实验来验证一下。原本利用手头上已有的开发板是至少可以搭建出两套实验环境的，但我嫌太麻烦，需要飞很多线，所以最后还是在淘宝找来了现成的开发板，139元，周三拍的，周五收到，周六顺利完成实验。</p></blockquote>
 
 
 <p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/board.jpg" alt="image" /></p>
 
 <h3>引脚整理</h3>
 
-<p>核心板加主板形式的开发板，很讨厌的一件事情就是查找引脚对应关系，正准备在纸上画个表格的，突然想起前不久看到过一个做表格的gem，正好可以试试。弄了好半都没有搞定怎么把两个表格横向拼在一起，最后只好用了<code>paste</code>命令。
+<p>核心板加主板形式的开发板，很讨厌的一件事情就是查找引脚对应关系，正准备在纸上画个表格的，突然想起前不久看到过一个做表格的gem，正好可以试试。弄了好半都没有搞定怎么用Ruby把两个表格横向拼在一起，最后只好用了<code>paste</code>命令。
 <img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/screen.png" alt="image" /></p>
 
 <h3>CPU程序</h3>
 
-<p>简单的测试程序。8051访问外部地址空间的写法我搜集了一下，大概有3种，见注释掉的部分。</p>
+<p>简单的测试程序。8051访问外部地址空间的写法搜集了一下，大概有3种，见注释掉的部分。</p>
 
 <figure class='code'><figcaption><span> (bus_expand.c)</span> <a href='/downloads/code/bus_expand/bus_expand.c'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -439,7 +439,8 @@
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/bus_expand_rtl.png" alt="image" /></p>
+<p>看到Rtl才发现其实真的很简单。
+<img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/bus_expand_rtl.png" alt="image" /></p>
 </div>
   
   
@@ -2043,7 +2044,7 @@ Like, seriously, a <em>LOT</em> of text</strong></p>
 
 <h4>Links and Email</h4>
 
-<p>An email <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#101;&#x78;&#97;&#109;&#x70;&#x6c;&#101;&#64;&#101;&#x78;&#x61;&#x6d;&#112;&#108;&#101;&#x2e;&#x63;&#111;&#109;">&#101;&#x78;&#x61;&#x6d;&#x70;&#108;&#101;&#x40;&#101;&#120;&#x61;&#109;&#112;&#108;&#101;&#46;&#x63;&#x6f;&#109;</a> link.</p>
+<p>An email <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#101;&#64;&#x65;&#x78;&#97;&#x6d;&#x70;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;">&#101;&#x78;&#97;&#109;&#112;&#108;&#x65;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#x6c;&#101;&#46;&#x63;&#111;&#x6d;</a> link.</p>
 
 <p>Simple inline link <a href="http://chenluois.com">http://chenluois.com</a>, another inline link <a href="http://smallerapp.com">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">Resize</a>.</p>
 
