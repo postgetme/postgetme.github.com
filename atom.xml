@@ -4,7 +4,7 @@
   <title><![CDATA[postget]]></title>
   <link href="http://postgetme.github.io/atom.xml" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2013-09-01T02:14:20+08:00</updated>
+  <updated>2013-09-01T10:11:16+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -18,19 +18,19 @@
     <link href="http://postgetme.github.io/blog/2013/08/31/bus-expand/"/>
     <updated>2013-08-31T15:01:00+08:00</updated>
     <id>http://postgetme.github.io/blog/2013/08/31/bus-expand</id>
-    <content type="html"><![CDATA[<blockquote><p>周三拍的开发板，139元，周五收到，今天做完实验。这个开发板5年前要800元，我那时还有过一块的。。。</p></blockquote>
+    <content type="html"><![CDATA[<blockquote><p>做这个实验，前后准备了大概一个星期，先是搜集和熟悉资料，然后对比了几种不同的写法，最后想做个实验来验证一下，利用手头上已有的开发板至少可以搭建出两套实验环境，但是我嫌太麻烦，需要飞很多线，所以最后我还是在淘宝找来了现成的开发板，139元，周三拍的，周五收到，周六顺利完成实验。</p></blockquote>
 
 
 <p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/board.jpg" alt="image" /></p>
 
 <h3>引脚整理</h3>
 
-<p>核心板加主板形式的开发板，很头疼的一件事就是查找引脚对应关系。正准备在纸上列个表格的，突然想起前不久看到过一个做表格的gem，于是就想顺便玩玩这个gem。弄了好半都没有搞定怎么把两个表格横向拼在一起（我Ruby刚学，最近又有好久没学了），最后只好用了<code>paste</code>命令。
+<p>核心板加主板形式的开发板，很讨厌的一件事情就是查找引脚对应关系，正准备在纸上画个表格的，突然想起前不久看到过一个做表格的gem，正好可以试试。弄了好半都没有搞定怎么把两个表格横向拼在一起，最后只好用了<code>paste</code>命令。
 <img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/screen.png" alt="image" /></p>
 
 <h3>CPU程序</h3>
 
-<p>简单的测试程序。8051访问外部地址空间的写法我搜罗了一下，大概有3种，见注释掉的部分。</p>
+<p>简单的测试程序。8051访问外部地址空间的写法我搜集了一下，大概有3种，见注释掉的部分。</p>
 
 <figure class='code'><figcaption><span> (bus_expand.c)</span> <a href='http://postgetme.github.io/downloads/code/bus_expand/bus_expand.c'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -132,7 +132,7 @@
 
 <h3>CPLD程序</h3>
 
-<p>这个程序调试了好久，反复对比Rtl才得出这个最终版本，不知道还能不能优化。注释掉的地方值得注意，这些细小的差异会导致Rtl差异非常大，目前这种写法资源消耗最少。这个程序还可以写成模块化的形式，可以分成总线接口、LED、KEY三个模块，我见别人的程序是这么弄的，本程序因为很简单所以就这样吧。</p>
+<p>这个程序调试了好久，反复对比Rtl才得出现在这个样子，不知道还能不能优化？注释掉的两个地方值得注意，这些细小的差异会导致Rtl差异非常大，目前这种写法资源消耗最少。这个程序还可以写成模块化的形式，分成总线接口、LED、KEY三个模块，我参考的一份程序是这么弄的。</p>
 
 <figure class='code'><figcaption><span> (bus_expand.v)</span> <a href='http://postgetme.github.io/downloads/code/bus_expand/bus_expand.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -262,7 +262,7 @@
 
 <h3>Tcl</h3>
 
-<p>第一次用Tcl来配置引脚，没想到是这么简单和方便。</p>
+<p>第一次用Tcl来配置引脚，没想到这么简单。</p>
 
 <figure class='code'><figcaption><span> (bus_expand.tcl)</span> <a href='http://postgetme.github.io/downloads/code/bus_expand/bus_expand.tcl'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -1865,7 +1865,7 @@ Like, seriously, a <em>LOT</em> of text</strong></p>
 
 <h4>Links and Email</h4>
 
-<p>An email <a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#x65;&#120;&#x61;&#109;&#112;&#108;&#x65;&#64;&#x65;&#x78;&#x61;&#109;&#112;&#108;&#101;&#x2e;&#99;&#x6f;&#109;">&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#x65;&#x40;&#101;&#120;&#97;&#109;&#x70;&#x6c;&#101;&#46;&#x63;&#111;&#x6d;</a> link.</p>
+<p>An email <a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#x65;&#x78;&#97;&#x6d;&#112;&#x6c;&#x65;&#64;&#x65;&#120;&#97;&#109;&#112;&#108;&#101;&#x2e;&#x63;&#x6f;&#x6d;">&#x65;&#x78;&#97;&#x6d;&#112;&#108;&#101;&#64;&#101;&#120;&#x61;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#111;&#x6d;</a> link.</p>
 
 <p>Simple inline link <a href="http://chenluois.com">http://chenluois.com</a>, another inline link <a href="http://smallerapp.com">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">Resize</a>.</p>
 
