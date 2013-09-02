@@ -9,7 +9,7 @@
   <meta name="author" content="MeiLin">
 
   
-  <meta name="description" content="做这个实验，前后准备了大概一个星期，先是搜集资料和熟悉资料，然后对比了几种不同的写法，最后考虑怎么搭建环境验证。原本利用手头上已有的开发板是可以至少搭建出两种实验环境的，但我嫌太麻烦，需要飞很多线，所以最后还是在淘宝找来了现成的开发板，139元，周三拍的，周五收到，周六顺利完成实验。 引脚整理 &hellip;">
+  <meta name="description" content="做这个实验，前后准备了大概一个星期，先是搜集资料和熟悉资料，然后对比了几种不同的Verilog写法，最后考虑该怎么搭建环境验证。原本利用手头上已有的开发板是可以至少搭建出两种实验环境的，但我嫌太麻烦，需要飞很多线，所以最后还是在淘宝找来了现成的开发板，139元，周三拍的，周五收到，周六顺利完成实验 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -109,15 +109,15 @@
   </header>
 
 
-  <div class="entry-content"><blockquote><p>做这个实验，前后准备了大概一个星期，先是搜集资料和熟悉资料，然后对比了几种不同的写法，最后考虑怎么搭建环境验证。原本利用手头上已有的开发板是可以至少搭建出两种实验环境的，但我嫌太麻烦，需要飞很多线，所以最后还是在淘宝找来了现成的开发板，139元，周三拍的，周五收到，周六顺利完成实验。</p></blockquote>
+  <div class="entry-content"><blockquote><p>做这个实验，前后准备了大概一个星期，先是搜集资料和熟悉资料，然后对比了几种不同的Verilog写法，最后考虑该怎么搭建环境验证。原本利用手头上已有的开发板是可以至少搭建出两种实验环境的，但我嫌太麻烦，需要飞很多线，所以最后还是在淘宝找来了现成的开发板，139元，周三拍的，周五收到，周六顺利完成实验。</p></blockquote>
 
 
 <p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/board.jpg" alt="image" /></p>
 
 <h3>引脚整理</h3>
 
-<p>核心板加主板形式的开发板，很讨厌的一件事情就是查找引脚对应关系，正准备在纸上画个表格的，突然想起前不久看到过一个做表格的gem，正好可以试试。弄了好半都没有搞定怎么用Ruby把两个表格横向拼在一起，最后只好用了<code>paste</code>命令。
-<img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/screen.png" alt="image" /></p>
+<p>核心板加主板形式的开发板，很讨厌的一件事情就是查找引脚对应关系，正准备在纸上画个表格的，突然想起前不久看到过一个做表格的gem，正好可以拿来试试。弄了好半天都没有搞定怎么用Ruby把两个表格横向拼在一起，最后只好用了<code>paste</code>命令。
+<a href="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/screen.png"><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/screen.png" alt="image" /></a></p>
 
 <h3>CPU程序</h3>
 
@@ -227,7 +227,7 @@
 
 <h3>CPLD程序</h3>
 
-<p>这个程序调试了好久，反复对比Rtl才得出现在这个样子，不知道还能不能优化？注释掉的两个地方值得注意，这些细小的差异会导致Rtl差异非常大，目前这种写法资源消耗最少。这个程序还可以写成模块化的形式，分成总线接口、LED、KEY三个模块，我参考的一份程序是这么弄的。</p>
+<p>这个程序调试了好久，反复对比Rtl才得出现在这个样子，不知道还能不能优化？注释掉的两个地方值得注意，这些细小的差异会导致Rtl的异非常大，目前这种写法资源消耗最少。这个程序还可以写成模块化的形式，分成总线接口、LED、KEY三个模块，我参考的一份程序是这么弄的。</p>
 
 <figure class='code'><figcaption><span> (bus_expand.v)</span> <a href='/downloads/code/bus_expand/bus_expand.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -2048,7 +2048,7 @@ Like, seriously, a <em>LOT</em> of text</strong></p>
 
 <h4>Links and Email</h4>
 
-<p>An email <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#x65;&#120;&#x61;&#109;&#112;&#108;&#x65;&#x40;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#x65;&#120;&#x61;&#109;&#112;&#108;&#101;&#x40;&#x65;&#x78;&#97;&#x6d;&#112;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;</a> link.</p>
+<p>An email <a href="&#x6d;&#97;&#x69;&#108;&#116;&#x6f;&#58;&#x65;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#x40;&#101;&#120;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#109;">&#x65;&#x78;&#x61;&#x6d;&#x70;&#108;&#x65;&#64;&#x65;&#x78;&#x61;&#x6d;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;</a> link.</p>
 
 <p>Simple inline link <a href="http://chenluois.com">http://chenluois.com</a>, another inline link <a href="http://smallerapp.com">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">Resize</a>.</p>
 
