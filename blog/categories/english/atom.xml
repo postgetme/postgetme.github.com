@@ -4,7 +4,7 @@
   <title><![CDATA[Category: english | postget]]></title>
   <link href="http://postgetme.github.io/blog/categories/english/atom.xml" rel="self"/>
   <link href="http://postgetme.github.io/"/>
-  <updated>2014-01-10T21:15:32+08:00</updated>
+  <updated>2014-01-10T21:19:38+08:00</updated>
   <id>http://postgetme.github.io/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -68,7 +68,7 @@
 
 <h3>全部视频汇总列表</h3>
 
-<p>这个列表是我用RUBY写的一个简单程序抓取的，使用WIN32OLE库操作的浏览器，回头有空再写篇文章描述这个过程。(这里的视频链接都是链接到公司内部的，外部打不开。)<br></br>
+<p>这个列表是我用RUBY写的一个简单程序抓取的，使用了WIN32OLE库来操作浏览器，回头有空再写篇文章描述这个过程。（这里的视频链接都是链接到公司内部的，外部打不开。）<br></br>
 <span class="badge badge-green">83. </span> <a href="http://share.zte.com.cn/tech/jsp/specdocshare?docid=ff808081436e0ac001436fff0ae02442">The Real Google Interns' First Week</a> Date: 1.8 Clicked: 30<br></br>
 <span class="badge badge-green">82. </span> <a href="http://share.zte.com.cn/tech/jsp/specdocshare?docid=8aa906b043194d4901436ad2ae3b154b">Apple Recruitment Video 2012</a> Date: 1.7 Clicked: 78<br></br>
 <span class="badge badge-green">81. </span> <a href="http://share.zte.com.cn/tech/jsp/specdocshare?docid=8aa906b043194d49014365a9c00d5821">What Most Schools Don&rsquo;t Teach</a> Date: 1.6 Clicked: 136<br></br>
