@@ -44,4 +44,6 @@ int main(void)
     {
         LED_REG = KEY_REG;
     }
+
+    return 0;
 }
