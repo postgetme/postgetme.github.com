@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[postget]]></title>
-  <link href="http://postgetme.github.io/feed" rel="self"/>
-  <link href="http://postgetme.github.io/"/>
-  <updated>2014-01-11T16:57:43+08:00</updated>
-  <id>http://postgetme.github.io/</id>
+  <link href="http://postget.me/feed" rel="self"/>
+  <link href="http://postget.me/"/>
+  <updated>2014-01-11T17:39:25+08:00</updated>
+  <id>http://postget.me/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[英语圈视频分享汇总]]></title>
-    <link href="http://postgetme.github.io/blog/2014/01/08/video-sharing/"/>
+    <link href="http://postget.me/blog/2014/01/08/video-sharing/"/>
     <updated>2014-01-08T23:02:00+08:00</updated>
-    <id>http://postgetme.github.io/blog/2014/01/08/video-sharing</id>
+    <id>http://postget.me/blog/2014/01/08/video-sharing</id>
     <content type="html"><![CDATA[
 
 <p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/video%20sharing/video%20sharing.jpg" alt="image" /></p>
@@ -158,9 +158,9 @@ Clicked Counts: 10081</p>
   
   <entry>
     <title type="html"><![CDATA[139元的总线扩展实验]]></title>
-    <link href="http://postgetme.github.io/blog/2013/08/31/bus-expand/"/>
+    <link href="http://postget.me/blog/2013/08/31/bus-expand/"/>
     <updated>2013-08-31T15:01:00+08:00</updated>
-    <id>http://postgetme.github.io/blog/2013/08/31/bus-expand</id>
+    <id>http://postget.me/blog/2013/08/31/bus-expand</id>
     <content type="html"><![CDATA[<blockquote><p>做这个实验，前后准备了大概一个星期，先是搜集资料和熟悉资料，然后对比了几种不同的Verilog写法，最后考虑该怎么搭建环境验证。原本利用手头上已有的开发板是可以至少搭建出两种实验环境的，但我嫌太麻烦，需要飞很多线，所以最后还是在淘宝找来了现成的开发板，139元，周三拍的，周五收到，周六顺利完成实验。</p></blockquote>
 
 
@@ -175,7 +175,7 @@ Clicked Counts: 10081</p>
 
 <p>简单的测试程序。8051访问外部地址空间的写法搜集了一下，大概有3种，见注释掉的部分。</p>
 
-<figure class='code'><figcaption><span> (bus_expand.c)</span> <a href='http://postgetme.github.io/downloads/code/bus_expand/bus_expand.c'>download</a></figcaption>
+<figure class='code'><figcaption><span> (bus_expand.c)</span> <a href='http://postget.me/downloads/code/bus_expand/bus_expand.c'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -281,7 +281,7 @@ Clicked Counts: 10081</p>
 
 <p>这个程序调试了好久，反复对比Rtl才得出现在这个样子，不知道还能不能优化？注释掉的两个地方值得注意，这些细小的差异会导致Rtl的异非常大，目前这种写法资源消耗最少。这个程序还可以写成模块化的形式，分成总线接口、LED、KEY三个模块，我参考的一份程序是这么弄的。</p>
 
-<figure class='code'><figcaption><span> (bus_expand.v)</span> <a href='http://postgetme.github.io/downloads/code/bus_expand/bus_expand.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (bus_expand.v)</span> <a href='http://postget.me/downloads/code/bus_expand/bus_expand.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -411,7 +411,7 @@ Clicked Counts: 10081</p>
 
 <p>第一次用Tcl来配置引脚，没想到这么简单。</p>
 
-<figure class='code'><figcaption><span> (bus_expand.tcl)</span> <a href='http://postgetme.github.io/downloads/code/bus_expand/bus_expand.tcl'>download</a></figcaption>
+<figure class='code'><figcaption><span> (bus_expand.tcl)</span> <a href='http://postget.me/downloads/code/bus_expand/bus_expand.tcl'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -502,9 +502,9 @@ Clicked Counts: 10081</p>
   
   <entry>
     <title type="html"><![CDATA[分频器总结]]></title>
-    <link href="http://postgetme.github.io/blog/2013/08/11/divider/"/>
+    <link href="http://postget.me/blog/2013/08/11/divider/"/>
     <updated>2013-08-11T15:17:00+08:00</updated>
-    <id>http://postgetme.github.io/blog/2013/08/11/divider</id>
+    <id>http://postget.me/blog/2013/08/11/divider</id>
     <content type="html"><![CDATA[<h2>索引</h2>
 
 <ul>
@@ -524,7 +524,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (divider_1.v)</span> <a href='http://postgetme.github.io/downloads/code/divider/divider_1.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (divider_1.v)</span> <a href='http://postget.me/downloads/code/divider/divider_1.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -569,7 +569,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (divider_2.v)</span> <a href='http://postgetme.github.io/downloads/code/divider/divider_2.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (divider_2.v)</span> <a href='http://postget.me/downloads/code/divider/divider_2.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -620,7 +620,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (divider_3.v)</span> <a href='http://postgetme.github.io/downloads/code/divider/divider_3.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (divider_3.v)</span> <a href='http://postget.me/downloads/code/divider/divider_3.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -679,7 +679,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (divider_4.v)</span> <a href='http://postgetme.github.io/downloads/code/divider/divider_4.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (divider_4.v)</span> <a href='http://postget.me/downloads/code/divider/divider_4.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -730,7 +730,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (divider_5.v)</span> <a href='http://postgetme.github.io/downloads/code/divider/divider_5.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (divider_5.v)</span> <a href='http://postget.me/downloads/code/divider/divider_5.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -799,7 +799,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (divider_6.v)</span> <a href='http://postgetme.github.io/downloads/code/divider/divider_6.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (divider_6.v)</span> <a href='http://postget.me/downloads/code/divider/divider_6.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -874,7 +874,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (divider_7.v)</span> <a href='http://postgetme.github.io/downloads/code/divider/divider_7.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (divider_7.v)</span> <a href='http://postget.me/downloads/code/divider/divider_7.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -949,7 +949,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (divider_8.v)</span> <a href='http://postgetme.github.io/downloads/code/divider/divider_8.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (divider_8.v)</span> <a href='http://postget.me/downloads/code/divider/divider_8.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1083,9 +1083,9 @@ Clicked Counts: 10081</p>
   
   <entry>
     <title type="html"><![CDATA[38译码器的15种写法]]></title>
-    <link href="http://postgetme.github.io/blog/2013/08/04/decoder38/"/>
+    <link href="http://postget.me/blog/2013/08/04/decoder38/"/>
     <updated>2013-08-04T21:30:00+08:00</updated>
-    <id>http://postgetme.github.io/blog/2013/08/04/decoder38</id>
+    <id>http://postget.me/blog/2013/08/04/decoder38</id>
     <content type="html"><![CDATA[<blockquote><p>本文我不断变换写法来实现一个38译码器，目的只是想通过此过程来快速的学习Verilog语法要点。为了实现更多的写法变化以及覆盖更多的Verilog语法要点，我给通常的38译码器增加了一个`i_opt`信号用来控制输出是否反转。这些写法都是可综合的，并且通过了开发板验证。</p></blockquote>
 
 
@@ -1115,7 +1115,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (decoder38_1.v)</span> <a href='http://postgetme.github.io/downloads/code/decoder38/decoder38_1.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (decoder38_1.v)</span> <a href='http://postget.me/downloads/code/decoder38/decoder38_1.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1180,7 +1180,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (decoder38_2.v)</span> <a href='http://postgetme.github.io/downloads/code/decoder38/decoder38_2.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (decoder38_2.v)</span> <a href='http://postget.me/downloads/code/decoder38/decoder38_2.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1253,7 +1253,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (decoder38_3.v)</span> <a href='http://postgetme.github.io/downloads/code/decoder38/decoder38_3.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (decoder38_3.v)</span> <a href='http://postget.me/downloads/code/decoder38/decoder38_3.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1320,7 +1320,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (decoder38_4.v)</span> <a href='http://postgetme.github.io/downloads/code/decoder38/decoder38_4.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (decoder38_4.v)</span> <a href='http://postget.me/downloads/code/decoder38/decoder38_4.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1401,7 +1401,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (decoder38_5.v)</span> <a href='http://postgetme.github.io/downloads/code/decoder38/decoder38_5.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (decoder38_5.v)</span> <a href='http://postget.me/downloads/code/decoder38/decoder38_5.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1454,7 +1454,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (decoder38_6.v)</span> <a href='http://postgetme.github.io/downloads/code/decoder38/decoder38_6.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (decoder38_6.v)</span> <a href='http://postget.me/downloads/code/decoder38/decoder38_6.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1509,7 +1509,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (decoder38_7.v)</span> <a href='http://postgetme.github.io/downloads/code/decoder38/decoder38_7.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (decoder38_7.v)</span> <a href='http://postget.me/downloads/code/decoder38/decoder38_7.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1566,7 +1566,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (decoder38_8.v)</span> <a href='http://postgetme.github.io/downloads/code/decoder38/decoder38_8.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (decoder38_8.v)</span> <a href='http://postget.me/downloads/code/decoder38/decoder38_8.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1599,7 +1599,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (decoder38_9.v)</span> <a href='http://postgetme.github.io/downloads/code/decoder38/decoder38_9.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (decoder38_9.v)</span> <a href='http://postget.me/downloads/code/decoder38/decoder38_9.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1628,7 +1628,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (decoder38_10.v)</span> <a href='http://postgetme.github.io/downloads/code/decoder38/decoder38_10.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (decoder38_10.v)</span> <a href='http://postget.me/downloads/code/decoder38/decoder38_10.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1687,7 +1687,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (decoder38_11.v)</span> <a href='http://postgetme.github.io/downloads/code/decoder38/decoder38_11.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (decoder38_11.v)</span> <a href='http://postget.me/downloads/code/decoder38/decoder38_11.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1746,7 +1746,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (decoder38_12.v)</span> <a href='http://postgetme.github.io/downloads/code/decoder38/decoder38_12.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (decoder38_12.v)</span> <a href='http://postget.me/downloads/code/decoder38/decoder38_12.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1772,7 +1772,7 @@ Clicked Counts: 10081</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<figure class='code'><figcaption><span> (decoder38_12_base.v)</span> <a href='http://postgetme.github.io/downloads/code/decoder38/decoder38_12_base.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (decoder38_12_base.v)</span> <a href='http://postget.me/downloads/code/decoder38/decoder38_12_base.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1904,7 +1904,7 @@ Clicked Counts: 10081</p>
 
 <h3>Verilog</h3>
 
-<figure class='code'><figcaption><span> (decoder38_14.v)</span> <a href='http://postgetme.github.io/downloads/code/decoder38/decoder38_14.v'>download</a></figcaption>
+<figure class='code'><figcaption><span> (decoder38_14.v)</span> <a href='http://postget.me/downloads/code/decoder38/decoder38_14.v'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -1985,9 +1985,9 @@ Clicked Counts: 10081</p>
   
   <entry>
     <title type="html"><![CDATA[Mou Sample]]></title>
-    <link href="http://postgetme.github.io/blog/2013/08/04/mou/"/>
+    <link href="http://postget.me/blog/2013/08/04/mou/"/>
     <updated>2013-08-04T02:25:00+08:00</updated>
-    <id>http://postgetme.github.io/blog/2013/08/04/mou</id>
+    <id>http://postget.me/blog/2013/08/04/mou</id>
     <content type="html"><![CDATA[<h1>Mou</h1>
 
 <p><img src="http://mouapp.com/Mou_128.png" alt="Mou icon" /></p>
@@ -2013,7 +2013,7 @@ Like, seriously, a <em>LOT</em> of text</strong></p>
 
 <h4>Links and Email</h4>
 
-<p>An email <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#101;&#120;&#97;&#x6d;&#x70;&#x6c;&#101;&#x40;&#101;&#120;&#97;&#109;&#112;&#108;&#101;&#46;&#x63;&#x6f;&#109;">&#101;&#x78;&#x61;&#109;&#x70;&#108;&#101;&#x40;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#111;&#109;</a> link.</p>
+<p>An email <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#x65;&#120;&#x61;&#x6d;&#112;&#108;&#101;&#x40;&#101;&#x78;&#x61;&#109;&#x70;&#108;&#x65;&#x2e;&#99;&#x6f;&#x6d;">&#101;&#x78;&#97;&#x6d;&#112;&#x6c;&#x65;&#64;&#101;&#120;&#x61;&#109;&#112;&#108;&#x65;&#x2e;&#99;&#111;&#x6d;</a> link.</p>
 
 <p>Simple inline link <a href="http://chenluois.com">http://chenluois.com</a>, another inline link <a href="http://smallerapp.com">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">Resize</a>.</p>
 

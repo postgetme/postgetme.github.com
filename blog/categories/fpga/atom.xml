@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: fpga | postget]]></title>
-  <link href="http://postgetme.github.io/blog/categories/fpga/atom.xml" rel="self"/>
-  <link href="http://postgetme.github.io/"/>
-  <updated>2014-01-11T16:57:43+08:00</updated>
-  <id>http://postgetme.github.io/</id>
+  <link href="http://postget.me/blog/categories/fpga/atom.xml" rel="self"/>
+  <link href="http://postget.me/"/>
+  <updated>2014-01-11T17:39:25+08:00</updated>
+  <id>http://postget.me/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[139元的总线扩展实验]]></title>
-    <link href="http://postgetme.github.io/blog/2013/08/31/bus-expand/"/>
+    <link href="http://postget.me/blog/2013/08/31/bus-expand/"/>
     <updated>2013-08-31T15:01:00+08:00</updated>
-    <id>http://postgetme.github.io/blog/2013/08/31/bus-expand</id>
+    <id>http://postget.me/blog/2013/08/31/bus-expand</id>
     <content type="html"><![CDATA[<p><blockquote><p>做这个实验，前后准备了大概一个星期，先是搜集资料和熟悉资料，然后对比了几种不同的Verilog写法，最后考虑该怎么搭建环境验证。原本利用手头上已有的开发板是可以至少搭建出两种实验环境的，但我嫌太麻烦，需要飞很多线，所以最后还是在淘宝找来了现成的开发板，139元，周三拍的，周五收到，周六顺利完成实验。</p></blockquote></p>
 
 <p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/board.jpg" alt="image" /></p>
@@ -352,9 +352,9 @@
   
   <entry>
     <title type="html"><![CDATA[分频器总结]]></title>
-    <link href="http://postgetme.github.io/blog/2013/08/11/divider/"/>
+    <link href="http://postget.me/blog/2013/08/11/divider/"/>
     <updated>2013-08-11T15:17:00+08:00</updated>
-    <id>http://postgetme.github.io/blog/2013/08/11/divider</id>
+    <id>http://postget.me/blog/2013/08/11/divider</id>
     <content type="html"><![CDATA[<h2>索引</h2>
 
 <ul>
@@ -925,9 +925,9 @@
   
   <entry>
     <title type="html"><![CDATA[38译码器的15种写法]]></title>
-    <link href="http://postgetme.github.io/blog/2013/08/04/decoder38/"/>
+    <link href="http://postget.me/blog/2013/08/04/decoder38/"/>
     <updated>2013-08-04T21:30:00+08:00</updated>
-    <id>http://postgetme.github.io/blog/2013/08/04/decoder38</id>
+    <id>http://postget.me/blog/2013/08/04/decoder38</id>
     <content type="html"><![CDATA[<p><blockquote><p>本文我不断变换写法来实现一个38译码器，目的只是想通过此过程来快速的学习Verilog语法要点。为了实现更多的写法变化以及覆盖更多的Verilog语法要点，我给通常的38译码器增加了一个<code>i_opt</code>信号用来控制输出是否反转。这些写法都是可综合的，并且通过了开发板验证。</p></blockquote></p>
 
 <h2>索引</h2>

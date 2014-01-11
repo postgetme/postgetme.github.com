@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: music | postget]]></title>
-  <link href="http://postgetme.github.io/blog/categories/music/atom.xml" rel="self"/>
-  <link href="http://postgetme.github.io/"/>
-  <updated>2014-01-11T16:57:43+08:00</updated>
-  <id>http://postgetme.github.io/</id>
+  <link href="http://postget.me/blog/categories/music/atom.xml" rel="self"/>
+  <link href="http://postget.me/"/>
+  <updated>2014-01-11T17:39:25+08:00</updated>
+  <id>http://postget.me/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[英语圈视频分享汇总]]></title>
-    <link href="http://postgetme.github.io/blog/2014/01/08/video-sharing/"/>
+    <link href="http://postget.me/blog/2014/01/08/video-sharing/"/>
     <updated>2014-01-08T23:02:00+08:00</updated>
-    <id>http://postgetme.github.io/blog/2014/01/08/video-sharing</id>
+    <id>http://postget.me/blog/2014/01/08/video-sharing</id>
     <content type="html"><![CDATA[
 
 <p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/video%20sharing/video%20sharing.jpg" alt="image" /></p>
