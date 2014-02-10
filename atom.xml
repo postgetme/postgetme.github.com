@@ -4,7 +4,7 @@
   <title><![CDATA[postget]]></title>
   <link href="http://postget.me/atom.xml" rel="self"/>
   <link href="http://postget.me/"/>
-  <updated>2014-02-10T19:55:10+08:00</updated>
+  <updated>2014-02-10T20:14:57+08:00</updated>
   <id>http://postget.me/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -211,13 +211,10 @@
 <li>国庆节我发了8首狂欢MV 《Vacation》、《Algo Me Gusta De Ti》、《Glad You Came》、《Yeah 3x》、《I Gotta Feeling》、《On The Floor》、《Eenie Meenie》、《Documentary Of Eenie Meenie》</li>
 <li>圣诞节发了5首精选圣诞歌曲《The Spirit Of Christmas Past》、《Christmas Lights》、《Angels We Have Heard on High》、《When Christmas Comes To Town》、《Blue Christmas》</li>
 <li>元旦发的是Justin Bieber在New Year’s Eve 2012 in Times Square演唱的《Let It Be》</li>
-</ul>
+<li><p>春节放假前的最后3天发了3首回家主题的歌曲，分别是Edward Sharpe &amp; The Magnetic Zeros的《Home》、Sophie Zelmani的《Going Home》、Skylar Grey的《Coming Home》第二版（2014.2.10补充）</p>
 
-
-<h3>我还发过两个我很喜欢的电影插曲系列，不过大部分是中文歌曲，分别是：</h3>
-
-<ul>
-<li>电影《中国合伙人》中的《李雷和韩梅梅》、《光阴的故事》、《海阔天空》、《花房姑娘》</li>
+<h3>我还发过两个我很喜欢的电影插曲系列，不过大部分是中文歌曲，分别是：</h3></li>
+<li><p>电影《中国合伙人》中的《李雷和韩梅梅》、《光阴的故事》、《海阔天空》、《花房姑娘》</p></li>
 <li>电影《春娇与志明》中的《Drenched》、《最后的玫瑰》、《别为我是谁》</li>
 </ul>
 
@@ -234,7 +231,7 @@
 
 <h3>全部视频汇总列表</h3>
 
-<p>这个列表是我用RUBY写的一个简单程序抓取的，使用了WIN32OLE库来操作浏览器，回头有空再写篇文章描述这个过程。（这里的视频链接都是链接到公司内部的，外部打不开。）<br></br>
+<p>这个列表是我用RUBY写的一个简单程序抓取的，使用了WIN32OLE库来操作浏览器，回头有空再写篇文章描述这个过程。（这里的视频链接都是链接到公司内部的，外部打不开。）（2014.2.10增加了第84～100个视频，并更新了点击次数。）<br></br>
 <span class="badge badge-green">100.</span> <a href="http://share.zte.com.cn/tech/jsp/specdocshare?docid=ff80808143a4fa9701441a16a4c21a55">两个国外的腹语和侧躺剧视频，与春晚中的节目类似。</a> Date: 2.10 Clicked: 19<br></br>
 <span class="badge badge-green">99.</span> <a href="http://share.zte.com.cn/tech/jsp/specdocshare?docid=ff80808143a4fa9701440fa1e4f3546b">The Monster &amp; Space Bound &ndash; Eminem</a> Date: 2.8 Clicked: 49<br></br>
 <span class="badge badge-green">98.</span> <a href="http://share.zte.com.cn/tech/jsp/specdocshare?docid=ff80808143a4fa9701440aade6b81308">Ambassador&rsquo;s New Year&rsquo;s Message to China</a> Date: 2.7 Clicked: 142<br></br>
@@ -2196,7 +2193,7 @@ Like, seriously, a <em>LOT</em> of text</strong></p>
 
 <h4>Links and Email</h4>
 
-<p>An email <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#x40;&#x65;&#120;&#x61;&#x6d;&#x70;&#x6c;&#101;&#46;&#99;&#111;&#109;">&#x65;&#x78;&#97;&#x6d;&#x70;&#108;&#101;&#x40;&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#101;&#46;&#99;&#111;&#109;</a> link.</p>
+<p>An email <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#101;&#120;&#x61;&#109;&#x70;&#108;&#x65;&#64;&#x65;&#120;&#x61;&#109;&#x70;&#x6c;&#x65;&#x2e;&#99;&#111;&#109;">&#101;&#x78;&#97;&#x6d;&#x70;&#x6c;&#101;&#x40;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;</a> link.</p>
 
 <p>Simple inline link <a href="http://chenluois.com">http://chenluois.com</a>, another inline link <a href="http://smallerapp.com">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">Resize</a>.</p>
 
