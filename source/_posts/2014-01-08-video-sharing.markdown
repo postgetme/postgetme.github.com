@@ -46,6 +46,7 @@ background-color: #3a87ad;
 - 国庆节我发了8首狂欢MV 《Vacation》、《Algo Me Gusta De Ti》、《Glad You Came》、《Yeah 3x》、《I Gotta Feeling》、《On The Floor》、《Eenie Meenie》、《Documentary Of Eenie Meenie》
 - 圣诞节发了5首精选圣诞歌曲《The Spirit Of Christmas Past》、《Christmas Lights》、《Angels We Have Heard on High》、《When Christmas Comes To Town》、《Blue Christmas》
 - 元旦发的是Justin Bieber在New Year’s Eve 2012 in Times Square演唱的《Let It Be》
+- 春节放假前的最后3天发了我精心挑选的3首回家主题的歌曲，分别是Edward Sharpe & The Magnetic Zeros的《Home》、Sophie Zelmani的《Going Home》、Skylar Grey的《Coming Home》第二版（2014.2.10补充）
 
 ###我还发过两个我很喜欢的电影插曲系列，不过大部分是中文歌曲，分别是：
 
@@ -60,7 +61,7 @@ background-color: #3a87ad;
 - 影视片段，如NewsRoom中讨论“为什么美国是最伟大的国家”的片段
 
 ###全部视频汇总列表
-这个列表是我用RUBY写的一个简单程序抓取的，使用了WIN32OLE库来操作浏览器，回头有空再写篇文章描述这个过程。（这里的视频链接都是链接到公司内部的，外部打不开。）<br></br>
+这个列表是我用RUBY写的一个简单程序抓取的，使用了WIN32OLE库来操作浏览器，回头有空再写篇文章描述这个过程。（这里的视频链接都是链接到公司内部的，外部打不开。）（2014.2.10增加了第84～100个视频，并更新了点击次数。）<br></br>
 <span class="badge badge-green">100.</span> <a href="http://share.zte.com.cn/tech/jsp/specdocshare?docid=ff80808143a4fa9701441a16a4c21a55">两个国外的腹语和侧躺剧视频，与春晚中的节目类似。</a> Date: 2.10 Clicked: 19<br></br>
 <span class="badge badge-green">99.</span> <a href="http://share.zte.com.cn/tech/jsp/specdocshare?docid=ff80808143a4fa9701440fa1e4f3546b">The Monster & Space Bound - Eminem</a> Date: 2.8 Clicked: 49<br></br>
 <span class="badge badge-green">98.</span> <a href="http://share.zte.com.cn/tech/jsp/specdocshare?docid=ff80808143a4fa9701440aade6b81308">Ambassador's New Year's Message to China</a> Date: 2.7 Clicked: 142<br></br>
