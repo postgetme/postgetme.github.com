@@ -1,113 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>翻译《Why I Dropped Out Of YC》 - postget</title>
-  <meta name="author" content="MeiLin">
-
-  
-  <meta name="description" content="Hacker News上看到的一篇文章，我觉得非常难以理解，花了一下午和一晚上的时间逐句翻译，总算是明白了。这篇文章有两个阻碍理解的地方，一是文章结构巧妙，文章虽名为讲YC，但开头前三段一直在讲笔记本，让人糊涂，然后才讲YC，最后又以笔记本收尾，这时才明白作者的写作构思，觉得巧妙。 &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://postget.me/blog/2014/02/16/translate-why-i-dropped-out-of-yc">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="postget" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-42942801-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">postget</a></h1>
-  
-    <h2>Every single thing I've learned helps me to give one more explanation to this world.</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:postget.me" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/about">About</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
+  <title><![CDATA[Category: startup | postget]]></title>
+  <link href="http://postget.me/blog/categories/startup/atom.xml" rel="self"/>
+  <link href="http://postget.me/"/>
+  <updated>2014-02-17T20:09:53+08:00</updated>
+  <id>http://postget.me/</id>
+  <author>
+    <name><![CDATA[MeiLin]]></name>
     
-      <h1 class="entry-title">翻译《Why I Dropped Out of YC》</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2014-02-16T18:45:00+08:00" pubdate data-updated="true">Feb 16<span>th</span>, 2014</time>
-        
-         | <a href="#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><blockquote><p>Hacker News上看到的一篇<a href="https://news.ycombinator.com/item?id=7242265">文章</a>，我觉得非常难以理解，花了一下午和一晚上的时间逐句翻译，总算是明白了。这篇文章有两个阻碍理解的地方，一是文章结构巧妙，文章虽名为讲YC，但开头前三段一直在讲笔记本，让人糊涂，然后才讲YC，最后又以笔记本收尾，这时才明白作者的写作构思，觉得巧妙。二是很多句子都使用了复杂的修饰，如“Naturally, those notes turned out to be nothing but the wild swirling caricatures of a sleep-deprived procrastinator nodding off every few minutes as the professor droned on.”我翻译为了“自然地，这些笔记最终成为了一个在教授的课堂上每隔几分钟都要点头打盹的缺乏睡眠的拖延者手中的狂野的让人眩晕的漫画册。”等。全文翻译如下。</p></blockquote>
-
+  <entry>
+    <title type="html"><![CDATA[翻译《Why I Dropped Out Of YC》]]></title>
+    <link href="http://postget.me/blog/2014/02/16/translate-why-i-dropped-out-of-yc/"/>
+    <updated>2014-02-16T18:45:00+08:00</updated>
+    <id>http://postget.me/blog/2014/02/16/translate-why-i-dropped-out-of-yc</id>
+    <content type="html"><![CDATA[<p><blockquote><p>Hacker News上看到的一篇<a href="https://news.ycombinator.com/item?id=7242265">文章</a>，我觉得非常难以理解，花了一下午和一晚上的时间逐句翻译，总算是明白了。这篇文章有两个阻碍理解的地方，一是文章结构巧妙，文章虽名为讲YC，但开头前三段一直在讲笔记本，让人糊涂，然后才讲YC，最后又以笔记本收尾，这时才明白作者的写作构思，觉得巧妙。二是很多句子都使用了复杂的修饰，如“Naturally, those notes turned out to be nothing but the wild swirling caricatures of a sleep-deprived procrastinator nodding off every few minutes as the professor droned on.”我翻译为了“自然地，这些笔记最终成为了一个在教授的课堂上每隔几分钟都要点头打盹的缺乏睡眠的拖延者手中的狂野的让人眩晕的漫画册。”等。全文翻译如下。</p></blockquote></p>
 
 <p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/translate%20why%20i%20dropped%20out%20yc/moleskin.jpg" alt="image" /></p>
 
@@ -162,144 +73,7 @@
 <p>Here we go again.</p>
 
 <p>我们再一次从这里开始。</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
+]]></content>
+  </entry>
   
-
-<span class="byline author vcard">Posted by <span class="fn">MeiLin</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-02-16T18:45:00+08:00" pubdate data-updated="true">Feb 16<span>th</span>, 2014</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/english/'>english</a>, <a class='category' href='/blog/categories/startup/'>startup</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  
-  
-<!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-<a class="addthis_button_sinaweibo"></a>
-<a class="addthis_button_twitter"></a>
-</div>
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fd30067610f737"></script>
-<!-- AddThis Button END -->
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2014/02/09/spring-festival-2014/" title="Previous Post: Spring Festival 2014">&laquo; Spring Festival 2014</a>
-      
-      
-    </p>
-  </footer>
-</article>
-
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-  </section>
-
-</div>
-
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2014/02/16/translate-why-i-dropped-out-of-yc/">翻译《Why I Dropped Out of YC》</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/02/09/spring-festival-2014/">Spring Festival 2014</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/08/video-sharing/">英语圈视频分享汇总</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/31/bus-expand/">139元的总线扩展实验</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/11/divider/">分频器总结</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-
-
-  
-</aside>
-
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - MeiLin -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'postget';
-      
-        
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://postget.me/blog/2014/02/16/translate-why-i-dropped-out-of-yc/';
-        var disqus_url = 'http://postget.me/blog/2014/02/16/translate-why-i-dropped-out-of-yc/';
-        var disqus_script = 'embed.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
+</feed>
