@@ -2,7 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://postget.me/blog/2013/08/04/mou/</loc>
-        <lastmod>2013-08-15T00:30:48+08:00</lastmod>
+        <lastmod>2014-02-23T23:19:09+08:00</lastmod>
     </url>
     <url>
         <loc>http://postget.me/blog/2013/08/04/decoder38/</loc>
@@ -29,12 +29,16 @@
         <lastmod>2014-02-23T21:49:44+08:00</lastmod>
     </url>
     <url>
+        <loc>http://postget.me/blog/2014/05/07/7-years/</loc>
+        <lastmod>2014-05-07T23:17:34+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://postget.me/about/</loc>
         <lastmod>2013-08-15T22:30:05+08:00</lastmod>
     </url>
     <url>
         <loc>http://postget.me/blog/archives/</loc>
-        <lastmod>2014-02-23T21:49:44+08:00</lastmod>
+        <lastmod>2014-05-07T23:17:34+08:00</lastmod>
     </url>
     <url>
         <loc>http://postget.me/feed/index.xml</loc>
@@ -42,7 +46,7 @@
     </url>
     <url>
         <loc>http://postget.me/</loc>
-        <lastmod>2014-02-23T21:49:44+08:00</lastmod>
+        <lastmod>2014-05-07T23:17:34+08:00</lastmod>
     </url>
     <url>
         <loc>http://postget.me/robots.txt</loc>
