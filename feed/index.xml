@@ -4,7 +4,7 @@
   <title><![CDATA[postget]]></title>
   <link href="http://postget.me/feed" rel="self"/>
   <link href="http://postget.me/"/>
-  <updated>2014-05-08T00:14:32+08:00</updated>
+  <updated>2014-05-08T21:39:45+08:00</updated>
   <id>http://postget.me/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -18,7 +18,7 @@
     <link href="http://postget.me/blog/2014/05/07/7-years/"/>
     <updated>2014-05-07T21:31:00+08:00</updated>
     <id>http://postget.me/blog/2014/05/07/7-years</id>
-    <content type="html"><![CDATA[<blockquote><p>7年前临近毕业时王老师让我写的一篇文章。从网上搜索了下来重新放在这里以作留念。（文章标题是当时王老师发在他博客中时添加的）</p><p>7年来，当初那个无知的对一切事物充满好奇的喜欢瞎折腾的傻孩子至今依旧未变。</p></blockquote>
+    <content type="html"><![CDATA[<blockquote><p>7年前临近毕业时王老师让我写的一篇文章。从网上搜索了下来重新放在这里以作留念（文章标题是当时王老师发在他博客中时添加的）。7年来，当初那个无知的喜欢瞎折腾的对一切事物充满好奇的傻瓜一直未曾改变。</p></blockquote>
 
 
 <h2 align="center">一个机械系学生学习嵌入式开发的经历</h2>
@@ -2346,7 +2346,7 @@ Like, seriously, a <em>LOT</em> of text</strong></p>
 
 <h4>Links and Email</h4>
 
-<p>An email <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#101;&#x78;&#97;&#x6d;&#x70;&#108;&#x65;&#x40;&#x65;&#x78;&#97;&#x6d;&#112;&#108;&#101;&#x2e;&#x63;&#111;&#109;">&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#x65;&#x40;&#x65;&#120;&#x61;&#x6d;&#x70;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;</a> link.</p>
+<p>An email <a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#x65;&#120;&#x61;&#109;&#112;&#108;&#x65;&#64;&#101;&#x78;&#x61;&#109;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;">&#x65;&#x78;&#97;&#109;&#112;&#108;&#101;&#64;&#101;&#x78;&#97;&#109;&#112;&#108;&#x65;&#46;&#99;&#111;&#109;</a> link.</p>
 
 <p>Simple inline link <a href="http://chenluois.com">http://chenluois.com</a>, another inline link <a href="http://smallerapp.com">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">Resize</a>.</p>
 
