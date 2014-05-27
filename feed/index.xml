@@ -4,7 +4,7 @@
   <title><![CDATA[postget]]></title>
   <link href="http://postget.me/feed" rel="self"/>
   <link href="http://postget.me/"/>
-  <updated>2014-05-27T21:37:39+08:00</updated>
+  <updated>2014-05-27T21:44:15+08:00</updated>
   <id>http://postget.me/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -45,7 +45,7 @@
 
 <h3>6.完美的捐赠</h3>
 
-<p>Heartbleed事件、捐赠OpenSSL、唯一来自亚洲并且是金额最大的一笔捐款、演示日历软件、锤子便签的长微博功能、现场发微博、“我爱这个世界”，环环相扣。点很好，时机很好，形式很好，好事也做了，好处也得了。一次完美的捐赠。</p>
+<p>Heartbleed事件、捐赠OpenSSL、唯一来自亚洲并且是金额最大的一笔捐款、演示日历软件、锤子便签的长微博功能、现场发微博、“我爱这个世界”，一切都顺理成章，点很好，时机很好，形式很好，好事也做了，好处也得了。一次完美的捐赠。</p>
 
 <h3>7.时间成本</h3>
 
@@ -2511,7 +2511,7 @@ Like, seriously, a <em>LOT</em> of text</strong></p>
 
 <h4>Links and Email</h4>
 
-<p>An email <a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#101;&#120;&#97;&#x6d;&#x70;&#x6c;&#101;&#64;&#x65;&#120;&#x61;&#109;&#x70;&#108;&#x65;&#x2e;&#99;&#111;&#109;">&#101;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#x65;&#46;&#x63;&#111;&#109;</a> link.</p>
+<p>An email <a href="&#109;&#x61;&#105;&#108;&#116;&#111;&#58;&#x65;&#x78;&#x61;&#109;&#112;&#108;&#101;&#64;&#101;&#x78;&#97;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#111;&#109;">&#x65;&#120;&#97;&#109;&#x70;&#108;&#x65;&#x40;&#x65;&#x78;&#x61;&#x6d;&#112;&#108;&#101;&#46;&#x63;&#x6f;&#109;</a> link.</p>
 
 <p>Simple inline link <a href="http://chenluois.com">http://chenluois.com</a>, another inline link <a href="http://smallerapp.com">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">Resize</a>.</p>
 
