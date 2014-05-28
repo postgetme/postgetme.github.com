@@ -4,7 +4,7 @@
   <title><![CDATA[postget]]></title>
   <link href="http://postget.me/feed" rel="self"/>
   <link href="http://postget.me/"/>
-  <updated>2014-05-27T21:44:15+08:00</updated>
+  <updated>2014-05-28T23:18:02+08:00</updated>
   <id>http://postget.me/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -61,7 +61,7 @@
 
 <h3>10.开放系统的好处</h3>
 
-<p>Android开放系统带来了两点好处，一是系统高度定制，诞生了很多第三方的优秀系统如小米、锤子、魅族等；二是诞生了许多优秀组件，如触宝号码助手、迅飞语音、有道词典、高德地图、网易云音乐等。一味说苹果封闭有N多好处和Android开放有N多坏处的人（比如我自己就是），需反思一下。任何事物的都有两面性。</p>
+<p>Android开放系统带来了两点好处，一是系统高度可定制，由此诞生了很多第三方的优秀系统如小米、锤子、魅族等；二是诞生了许多优秀组件，如触宝号码助手、迅飞语音、有道词典、高德地图、网易云音乐等。一味说苹果封闭有N多好处和Android开放有N多坏处的人（比如我自己就是），需反思一下。任何事物都有两面性。</p>
 
 <h2>锤子手机的几个创新点：</h2>
 
@@ -2511,7 +2511,7 @@ Like, seriously, a <em>LOT</em> of text</strong></p>
 
 <h4>Links and Email</h4>
 
-<p>An email <a href="&#109;&#x61;&#105;&#108;&#116;&#111;&#58;&#x65;&#x78;&#x61;&#109;&#112;&#108;&#101;&#64;&#101;&#x78;&#97;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#111;&#109;">&#x65;&#120;&#97;&#109;&#x70;&#108;&#x65;&#x40;&#x65;&#x78;&#x61;&#x6d;&#112;&#108;&#101;&#46;&#x63;&#x6f;&#109;</a> link.</p>
+<p>An email <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x65;&#x78;&#97;&#x6d;&#x70;&#108;&#x65;&#64;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#101;&#x78;&#x61;&#x6d;&#x70;&#108;&#x65;&#x40;&#x65;&#x78;&#x61;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#111;&#x6d;</a> link.</p>
 
 <p>Simple inline link <a href="http://chenluois.com">http://chenluois.com</a>, another inline link <a href="http://smallerapp.com">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">Resize</a>.</p>
 
