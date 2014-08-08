@@ -4,7 +4,7 @@
   <title><![CDATA[postget]]></title>
   <link href="http://postget.me/atom.xml" rel="self"/>
   <link href="http://postget.me/"/>
-  <updated>2014-08-08T22:48:19+08:00</updated>
+  <updated>2014-08-08T23:03:33+08:00</updated>
   <id>http://postget.me/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -101,7 +101,7 @@
     <link href="http://postget.me/blog/2014/05/25/t1/"/>
     <updated>2014-05-25T19:52:00+08:00</updated>
     <id>http://postget.me/blog/2014/05/25/t1</id>
-    <content type="html"><![CDATA[<p><img src="http://postget.me/images/Blog/T1/t1-3.jpg" alt="image" />
+    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/postgetme/postgetme.github.com/master/images/Blog/T1/t1-3.jpg" alt="image" />
 今天一早起来又把老罗的锤子手机发布会看了一遍，觉得里面值得学习、思考和给人启发的地方太多，需写篇文章总结一下。另外，写这篇文章也是想借这个机会把我当下这个阶段对一此事物的认知水平作一个记录，也许可供将来回顾和对比之用。为求文章能反映我的真实感受，而不受外界观点的影响，在初次看完布会后的几天里，我一直克制自己不去看与这场发布会相关的任何评论和报道，好几个讨论这场发布会的播客节目我也都忍住了不去听，知乎上的相关讨论我也一率不去看。现在终于写完了这篇文章，明天该去看看外界的观点了，知己知彼才知差距。</p>
 
 <h2>了解到的知识和道理:</h2>
@@ -2594,7 +2594,7 @@ Like, seriously, a <em>LOT</em> of text</strong></p>
 
 <h4>Links and Email</h4>
 
-<p>An email <a href="&#109;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#x65;&#120;&#x61;&#x6d;&#112;&#108;&#101;&#x40;&#101;&#120;&#97;&#109;&#x70;&#108;&#x65;&#x2e;&#99;&#111;&#x6d;">&#x65;&#x78;&#97;&#109;&#x70;&#x6c;&#101;&#x40;&#x65;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#46;&#x63;&#111;&#109;</a> link.</p>
+<p>An email <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#101;&#120;&#97;&#x6d;&#x70;&#x6c;&#x65;&#x40;&#x65;&#x78;&#97;&#109;&#x70;&#108;&#101;&#x2e;&#99;&#x6f;&#x6d;">&#101;&#x78;&#97;&#109;&#112;&#108;&#101;&#64;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#x63;&#111;&#109;</a> link.</p>
 
 <p>Simple inline link <a href="http://chenluois.com">http://chenluois.com</a>, another inline link <a href="http://smallerapp.com">Smaller</a>, one more inline link with title <a href="http://resizesafari.com" title="a Safari extension">Resize</a>.</p>
 
