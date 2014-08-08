@@ -4,7 +4,7 @@
   <title><![CDATA[Category: verilog | postget]]></title>
   <link href="http://postget.me/blog/categories/verilog/atom.xml" rel="self"/>
   <link href="http://postget.me/"/>
-  <updated>2014-08-08T23:18:42+08:00</updated>
+  <updated>2014-08-08T23:28:54+08:00</updated>
   <id>http://postget.me/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -20,12 +20,12 @@
     <id>http://postget.me/blog/2013/08/31/bus-expand</id>
     <content type="html"><![CDATA[<p><blockquote><p>做这个实验，前后准备了大概一个星期，先是搜集资料和熟悉资料，然后对比了几种不同的Verilog写法，最后考虑该怎么搭建环境验证。原本利用手头上已有的开发板是可以至少搭建出两种实验环境的，但我嫌太麻烦，需要飞很多线，所以最后还是在淘宝找来了现成的开发板，139元，周三拍的，周五收到，周六顺利完成实验。</p></blockquote></p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/board.jpg" alt="image" /></p>
+<p><img src="/images/Blog/bus%20expand/board.jpg" alt="image" /></p>
 
 <h3>引脚整理</h3>
 
 <p>核心板加主板形式的开发板，很讨厌的一件事情就是查找引脚对应关系，正准备在纸上画个表格的，突然想起前不久看到过一个做表格的gem，正好可以拿来试试。弄了好半天都没有搞定怎么用Ruby把两个表格横向拼在一起，最后只好用了<code>paste</code>命令。
-<a href="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/screen.png"><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/screen.png" alt="image" /></a></p>
+<a href="/images/Blog/bus%20expand/screen.png"><img src="/images/Blog/bus%20expand/screen.png" alt="image" /></a></p>
 
 <h3>CPU程序</h3>
 
@@ -346,7 +346,7 @@
 <h3>Rtl</h3>
 
 <p>看到Rtl才发现其实真的很简单。
-<img src="https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/bus_expand_rtl.png" alt="image" /></p>
+<img src="/images/Blog/bus%20expand/bus_expand_rtl.png" alt="image" /></p>
 ]]></content>
   </entry>
   
@@ -407,11 +407,11 @@
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_1_rtl.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_1_rtl.png" alt="image" /></p>
 
 <h3>Simulation</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_1_simulation.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_1_simulation.png" alt="image" /></p>
 
 <h2 id="divider_2">计数器2分频</h2>
 
@@ -457,11 +457,11 @@
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_2_rtl.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_2_rtl.png" alt="image" /></p>
 
 <h3>Simulation</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_2_simulation.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_2_simulation.png" alt="image" /></p>
 
 <h2 id="divider_3">D触发器4分频</h2>
 
@@ -515,11 +515,11 @@
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_3_rtl.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_3_rtl.png" alt="image" /></p>
 
 <h3>Simulation</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_3_simulation.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_3_simulation.png" alt="image" /></p>
 
 <h2 id="divider_4">计数器4分频</h2>
 
@@ -565,11 +565,11 @@
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_4_rtl.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_4_rtl.png" alt="image" /></p>
 
 <h3>Simulation</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_4_simulation.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_4_simulation.png" alt="image" /></p>
 
 <h2 id="divider_5">计数器6分频写法1</h2>
 
@@ -633,11 +633,11 @@
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_5_rtl.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_5_rtl.png" alt="image" /></p>
 
 <h3>Simulation</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_5_simulation.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_5_simulation.png" alt="image" /></p>
 
 <h2 id="divider_6">计数器6分频写法2</h2>
 
@@ -707,11 +707,11 @@
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_6_rtl.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_6_rtl.png" alt="image" /></p>
 
 <h3>Simulation</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_6_simulation.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_6_simulation.png" alt="image" /></p>
 
 <h2 id="divider_7">非等占空比3分频</h2>
 
@@ -781,11 +781,11 @@
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_7_rtl.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_7_rtl.png" alt="image" /></p>
 
 <h3>Simulation</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_7_simulation.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_7_simulation.png" alt="image" /></p>
 
 <h2 id="divider_8">等占空比3分频</h2>
 
@@ -915,11 +915,11 @@
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_8_rtl.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_8_rtl.png" alt="image" /></p>
 
 <h3>Simulation</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_8_simulation.png" alt="image" /></p>
+<p><img src="/images/Blog/divider/divider_8_simulation.png" alt="image" /></p>
 ]]></content>
   </entry>
   
@@ -1009,11 +1009,11 @@
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_1_rtl.png" alt="image" /></p>
+<p><img src="/images/Blog/38%20decoder/decoder_1_rtl.png" alt="image" /></p>
 
 <h3>Simulation</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_simulation.png" alt="image" /></p>
+<p><img src="/images/Blog/38%20decoder/decoder_simulation.png" alt="image" /></p>
 
 <h2 id="decoder38_2">两个always</h2>
 
@@ -1231,7 +1231,7 @@
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_4_rtl.png" alt="image" /></p>
+<p><img src="/images/Blog/38%20decoder/decoder_4_rtl.png" alt="image" /></p>
 
 <h2 id="decoder38_5">只用assign</h2>
 
@@ -1337,7 +1337,7 @@
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_6_rtl.png" alt="image" /></p>
+<p><img src="/images/Blog/38%20decoder/decoder_6_rtl.png" alt="image" /></p>
 
 <h2 id="decoder38_7">for循环2</h2>
 
@@ -1425,7 +1425,7 @@
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_8_rtl.png" alt="image" /></p>
+<p><img src="/images/Blog/38%20decoder/decoder_8_rtl.png" alt="image" /></p>
 
 <h2 id="decoder38_9">一行代码搞定</h2>
 
@@ -1645,8 +1645,8 @@
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_12_rtl.png" alt="image" />
-<img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_12_base_rtl.png" alt="image" /></p>
+<p><img src="/images/Blog/38%20decoder/decoder_12_rtl.png" alt="image" />
+<img src="/images/Blog/38%20decoder/decoder_12_base_rtl.png" alt="image" /></p>
 
 <h2 id="decoder38_13">原理图方式</h2>
 
@@ -1655,11 +1655,11 @@
 
 <h3>原理图</h3>
 
-<p><a href="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_13_bdf.png"><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_13_bdf.png" alt="image" /></a></p>
+<p><a href="/images/Blog/38%20decoder/decoder_13_bdf.png"><img src="/images/Blog/38%20decoder/decoder_13_bdf.png" alt="image" /></a></p>
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_13_rtl.png" alt="image" /></p>
+<p><img src="/images/Blog/38%20decoder/decoder_13_rtl.png" alt="image" /></p>
 
 <h2 id="decoder38_14">真值表描述</h2>
 
@@ -1770,7 +1770,7 @@ END TABLE;
 
 <h3>Rtl</h3>
 
-<p><img src="https://dl.dropboxusercontent.com/u/128996895/Blog/38%E8%AF%91%E7%A0%81%E5%99%A8/decoder_14_rtl.png" alt="image" /></p>
+<p><img src="/images/Blog/38%20decoder/decoder_14_rtl.png" alt="image" /></p>
 
 <h2 id="decoder38_15">门级描述</h2>
 
