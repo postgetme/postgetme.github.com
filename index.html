@@ -9,7 +9,8 @@
   <meta name="author" content="MeiLin">
 
   
-  <meta name="description" content="这一年我也敢说梦想了，这一年我的所为和所思也只为这个梦想。 梦想 参考了一下马云的梦想，现在我把我的梦想表述为：“让天下没有难造的东西”。 举个例子。 要把上面这样一款产品制造出来，通常是挺费劲的，你需要寻找和应对N家供应商，如电路板加工厂，电子元器件商，焊接加工厂，电池生产厂，五金厂，模具厂， &hellip;">
+  <meta name="description" content="明天要回去老家玩一段时间喽。 从5月4号离职到今天，这一个月的时间里，真是太自由自在了： 先是把谷歌地球转了两天，思考何去何从，哈哈哈，开玩笑的。其实是为了学习基础的地理知识，以及把一些重要的地方标记一下。
+练习了几天英语听力，每天听一段2~5分钟的英语视频，反复听，直到实在听不清，再看字幕。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +79,75 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/06/10/leave-my-job-for-one-month/">离职一个月</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-06-10T21:56:00+08:00" pubdate data-updated="true">Jun 10<span>th</span>, 2015</time>
+        
+         | <a href="/blog/2015/06/10/leave-my-job-for-one-month/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="/images/Blog/leave%20my%20job/1.JPG" alt="image" /></p>
+
+<p>明天要回去老家玩一段时间喽。</p>
+
+<p>从5月4号离职到今天，这一个月的时间里，真是太自由自在了：</p>
+
+<ul>
+<li><p>先是把谷歌地球转了两天，思考何去何从，哈哈哈，开玩笑的。其实是为了学习基础的地理知识，以及把一些重要的地方标记一下。</p></li>
+<li><p>练习了几天英语听力，每天听一段2~5分钟的英语视频，反复听，直到实在听不清，再看字幕。</p></li>
+<li><p>把经典电影梳理了一遍，把以前漏掉的或是印象不深的补看了一遍，如：威尼斯商人、傲慢与偏见等。</p></li>
+<li><p>花了一天时间把这一两年的歌曲草草的整理了一下。</p></li>
+<li><p>听了3天3夜的蒋勋讲红楼梦，后面又断断续续听，现在听到了二十多回。</p></li>
+<li><p>把高晓松的大航海重新看了一遍，又看了央视的大国崛起记录片加以补充。</p></li>
+<li><p>花了500块钱，核了个公司名，核名通过了，哈哈，深圳市规格电子有限公司。</p></li>
+</ul>
+
+
+<p><img src="/images/Blog/leave%20my%20job/2.JPG" alt="image" /></p>
+
+<ul>
+<li><p>近代史、党史、长征脉络梳理了一遍。</p></li>
+<li><p>学习了思客教学的CSS课程；了解了一下React（React组件与jQuery插件相比，多了UI规范和DOM渲染机制。）；决定学用jQuery。</p></li>
+<li><p>最近一个星期，每天爬到山顶吹风。爬山有点累，但爬到山顶后有大风吹，有汽水喝，有风景看，感觉真好。</p></li>
+</ul>
+
+
+<p><img src="/images/Blog/leave%20my%20job/3.JPG" alt="image" /></p>
+
+<ul>
+<li>保持良好心态：不断学习，了解世界，锻炼身体，可持续发展；机会永远都会有，只怕实力不够。</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -2052,938 +2122,9 @@ Clicked Counts: 14652</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/04/decoder38/">38译码器的15种写法</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-04T21:30:00+08:00" pubdate data-updated="true">Aug 4<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/08/04/decoder38/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><blockquote><p>本文我不断变换写法来实现一个38译码器，目的只是想通过此过程来快速的学习Verilog语法要点。为了实现更多的写法变化以及覆盖更多的Verilog语法要点，我给通常的38译码器增加了一个`i_opt`信号用来控制输出是否反转。这些写法都是可综合的，并且通过了开发板验证。</p></blockquote>
-
-
-<h2>索引</h2>
-
-<ul>
-<li><a href="#decoder38_1">标准写法</a></li>
-<li><a href="#decoder38_2">两个always</a></li>
-<li><a href="#decoder38_3">一个always搞定</a></li>
-<li><a href="#decoder38_4">改成if else</a></li>
-<li><a href="#decoder38_5">只用assign</a></li>
-<li><a href="#decoder38_6">for循环1</a></li>
-<li><a href="#decoder38_7">for循环2</a></li>
-<li><a href="#decoder38_8">两行代码搞定</a></li>
-<li><a href="#decoder38_9">一行代码搞定</a></li>
-<li><a href="#decoder38_10">调用function</a></li>
-<li><a href="#decoder38_11">调用task</a></li>
-<li><a href="#decoder38_12">调用module</a></li>
-<li><a href="#decoder38_13">原理图方式</a></li>
-<li><a href="#decoder38_14">真值表描述</a></li>
-<li><a href="#decoder38_15">门级描述</a></li>
-</ul>
-
-
-<h2 id="decoder38_1">标准写法</h2>
-
-
-<h3>Verilog</h3>
-
-<figure class='code'><figcaption><span> (decoder38_1.v)</span> <a href='/downloads/code/decoder38/decoder38_1.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_1</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>    <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">begin</span>
-</span><span class='line'>            <span class="k">case</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">)</span>
-</span><span class='line'>                <span class="mh">3&#39;b000</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b11111110</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3&#39;b001</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b11111101</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3&#39;b010</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b11111011</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3&#39;b011</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b11110111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3&#39;b100</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b11101111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3&#39;b101</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b11011111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3&#39;b110</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b10111111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3&#39;b111</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b01111111</span><span class="p">;</span>
-</span><span class='line'>                <span class="k">default</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b11111111</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">endcase</span>
-</span><span class='line'>        <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">assign</span> <span class="n">o_y</span> <span class="o">=</span> <span class="p">(</span><span class="n">i_opt</span> <span class="o">==</span> <span class="mh">1&#39;b1</span><span class="p">)</span> <span class="o">?</span> <span class="o">~</span><span class="n">r_y</span> <span class="o">:</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Rtl</h3>
-
-<p><img src="/images/Blog/38%20decoder/decoder_1_rtl.png" alt="image" /></p>
-
-<h3>Simulation</h3>
-
-<p><img src="/images/Blog/38%20decoder/decoder_simulation.png" alt="image" /></p>
-
-<h2 id="decoder38_2">两个always</h2>
-
-
-<h3>Verilog</h3>
-
-<figure class='code'><figcaption><span> (decoder38_2.v)</span> <a href='/downloads/code/decoder38/decoder38_2.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_2</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>    <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="n">i_sel</span> <span class="k">or</span> <span class="n">i_opt</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">begin</span>
-</span><span class='line'>            <span class="k">case</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">)</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d0</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1110</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d1</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1101</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d2</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1011</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d3</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_0111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d4</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1110</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d5</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1101</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d6</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1011</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d7</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b0111</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="k">default</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;hff</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">endcase</span>
-</span><span class='line'>        <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="n">i_opt</span> <span class="k">or</span> <span class="n">r_y</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">begin</span>
-</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="n">i_opt</span> <span class="o">==</span> <span class="mh">1&#39;b1</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">o_y</span> <span class="o">=</span> <span class="o">~</span><span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">else</span>
-</span><span class='line'>                <span class="n">o_y</span> <span class="o">=</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>        <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Rtl</h3>
-
-<p>同上</p>
-
-<h2 id="decoder38_3">一个always搞定</h2>
-
-
-<h3>Verilog</h3>
-
-<figure class='code'><figcaption><span> (decoder38_3.v)</span> <a href='/downloads/code/decoder38/decoder38_3.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_3</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>    <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="n">i_sel</span> <span class="k">or</span> <span class="n">i_opt</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">begin</span>
-</span><span class='line'>            <span class="k">case</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">)</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d0</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1110</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d1</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1101</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d2</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1011</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d3</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_0111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d4</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1110</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d5</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1101</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d6</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1011</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d7</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b0111</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="k">default</span><span class="o">:</span> <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;hff</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">endcase</span>
-</span><span class='line'>
-</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="n">i_opt</span> <span class="o">==</span> <span class="mh">1&#39;b1</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">o_y</span> <span class="o">=</span> <span class="o">~</span><span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">else</span>
-</span><span class='line'>                <span class="n">o_y</span> <span class="o">=</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>        <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Rtl</h3>
-
-<p>同上</p>
-
-<h2 id="decoder38_4">改成if else</h2>
-
-
-<h3>Verilog</h3>
-
-<figure class='code'><figcaption><span> (decoder38_4.v)</span> <a href='/downloads/code/decoder38/decoder38_4.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_4</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>    <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="n">i_sel</span> <span class="k">or</span> <span class="n">i_opt</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">begin</span>
-</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d0</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1110</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d1</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1101</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d2</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1011</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d3</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_0111</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d4</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1110</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d5</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1101</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d6</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b1011</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d7</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;b0111</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">else</span>
-</span><span class='line'>                <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;hff</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="n">i_opt</span> <span class="o">==</span> <span class="mh">1&#39;b1</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">o_y</span> <span class="o">=</span> <span class="o">~</span><span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">else</span>
-</span><span class='line'>                <span class="n">o_y</span> <span class="o">=</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>        <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Rtl</h3>
-
-<p><img src="/images/Blog/38%20decoder/decoder_4_rtl.png" alt="image" /></p>
-
-<h2 id="decoder38_5">只用assign</h2>
-
-
-<h3>Verilog</h3>
-
-<figure class='code'><figcaption><span> (decoder38_5.v)</span> <a href='/downloads/code/decoder38/decoder38_5.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_5</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>    <span class="kt">wire</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">w_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">assign</span> <span class="n">w_y</span> <span class="o">=</span> <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d0</span><span class="p">)</span> <span class="o">?</span> <span class="mh">8&#39;b1111</span><span class="n">_1110</span> <span class="o">:</span>
-</span><span class='line'>                 <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d1</span><span class="p">)</span> <span class="o">?</span> <span class="mh">8&#39;b1111</span><span class="n">_1101</span> <span class="o">:</span>
-</span><span class='line'>                 <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d2</span><span class="p">)</span> <span class="o">?</span> <span class="mh">8&#39;b1111</span><span class="n">_1011</span> <span class="o">:</span>
-</span><span class='line'>                 <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d3</span><span class="p">)</span> <span class="o">?</span> <span class="mh">8&#39;b1111</span><span class="n">_0111</span> <span class="o">:</span>
-</span><span class='line'>                 <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d4</span><span class="p">)</span> <span class="o">?</span> <span class="mh">8&#39;b1110</span><span class="n">_1111</span> <span class="o">:</span>
-</span><span class='line'>                 <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d5</span><span class="p">)</span> <span class="o">?</span> <span class="mh">8&#39;b1101</span><span class="n">_1111</span> <span class="o">:</span>
-</span><span class='line'>                 <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d6</span><span class="p">)</span> <span class="o">?</span> <span class="mh">8&#39;b1011</span><span class="n">_1111</span> <span class="o">:</span>
-</span><span class='line'>                 <span class="p">(</span><span class="n">i_sel</span> <span class="o">==</span> <span class="mh">3</span><span class="mi">&#39;d7</span><span class="p">)</span> <span class="o">?</span> <span class="mh">8&#39;b0111</span><span class="n">_1111</span> <span class="o">:</span>
-</span><span class='line'>                 <span class="mh">8&#39;b1111</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">assign</span> <span class="n">o_y</span> <span class="o">=</span> <span class="p">(</span><span class="n">i_opt</span> <span class="o">==</span> <span class="mh">1&#39;b1</span><span class="p">)</span> <span class="o">?</span> <span class="o">~</span><span class="n">w_y</span> <span class="o">:</span> <span class="n">w_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Rtl</h3>
-
-<p>同上</p>
-
-<h2 id="decoder38_6">for循环1</h2>
-
-
-<p>一直以为for循环是不可综合的，事实并非如此。不过，从Rtl中可以看到，for循环使用了8个32位宽的寄存器，比较浪费资源。</p>
-
-<h3>Verilog</h3>
-
-<figure class='code'><figcaption><span> (decoder38_6.v)</span> <a href='/downloads/code/decoder38/decoder38_6.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_6</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>    <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">integer</span> <span class="n">i</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">begin</span>
-</span><span class='line'>            <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mh">8</span><span class="p">;</span> <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mh">1</span><span class="p">)</span>
-</span><span class='line'>                <span class="k">begin</span>
-</span><span class='line'>                    <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="n">i_sel</span><span class="p">)</span>
-</span><span class='line'>                        <span class="n">r_y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span>
-</span><span class='line'>                    <span class="k">else</span>
-</span><span class='line'>                        <span class="n">r_y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span>
-</span><span class='line'>                <span class="k">end</span>
-</span><span class='line'>        <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">assign</span> <span class="n">o_y</span> <span class="o">=</span> <span class="p">(</span><span class="n">i_opt</span> <span class="o">==</span> <span class="mh">1&#39;b1</span><span class="p">)</span> <span class="o">?</span> <span class="o">~</span><span class="n">r_y</span> <span class="o">:</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Rtl</h3>
-
-<p><img src="/images/Blog/38%20decoder/decoder_6_rtl.png" alt="image" /></p>
-
-<h2 id="decoder38_7">for循环2</h2>
-
-
-<h3>Verilog</h3>
-
-<figure class='code'><figcaption><span> (decoder38_7.v)</span> <a href='/downloads/code/decoder38/decoder38_7.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_7</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>    <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">integer</span> <span class="n">i</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">begin</span>
-</span><span class='line'>            <span class="n">r_y</span> <span class="o">=</span> <span class="mh">8&#39;hff</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>            <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mh">8</span><span class="p">;</span> <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mh">1</span><span class="p">)</span>
-</span><span class='line'>                <span class="k">begin</span>
-</span><span class='line'>                    <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="n">i_sel</span><span class="p">)</span>
-</span><span class='line'>                        <span class="n">r_y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mh">0</span><span class="p">;</span>
-</span><span class='line'>                <span class="k">end</span>
-</span><span class='line'>        <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">assign</span> <span class="n">o_y</span> <span class="o">=</span> <span class="p">(</span><span class="n">i_opt</span> <span class="o">==</span> <span class="mh">1&#39;b1</span><span class="p">)</span> <span class="o">?</span> <span class="o">~</span><span class="n">r_y</span> <span class="o">:</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Rtl</h3>
-
-<p>同上</p>
-
-<h2 id="decoder38_8">两行代码搞定</h2>
-
-
-<p>这个例子使用了移位操作，使得代码长度明显缩短了。从Rtl看，生成了硬件移位器，我一开始还不知道FPGA内部有硬件移位器这种资源，查了一下资料，说FPGA内部是可以通过RAM块生成移位器的，接着我将器件换成MAXII系列EPLD来编译，奇怪的是，同样还是生成了移位器，可是MAXII系列器件内部是没有RAM资源的，我想也许是生成了桶型移位器吧，后来我也没有深究了。不知道这种写法可不可取？</p>
-
-<h3>Verilog</h3>
-
-<figure class='code'><figcaption><span> (decoder38_8.v)</span> <a href='/downloads/code/decoder38/decoder38_8.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_8</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>    <span class="kt">wire</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">w_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">assign</span> <span class="n">w_y</span> <span class="o">=</span> <span class="o">~</span><span class="p">(</span><span class="mh">8</span><span class="mi">&#39;d1</span> <span class="o">&lt;&lt;</span> <span class="n">i_sel</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">assign</span> <span class="n">o_y</span> <span class="o">=</span> <span class="p">(</span><span class="n">i_opt</span> <span class="o">==</span> <span class="mh">1&#39;b1</span><span class="p">)</span> <span class="o">?</span> <span class="o">~</span><span class="n">w_y</span> <span class="o">:</span> <span class="n">w_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Rtl</h3>
-
-<p><img src="/images/Blog/38%20decoder/decoder_8_rtl.png" alt="image" /></p>
-
-<h2 id="decoder38_9">一行代码搞定</h2>
-
-
-<h3>Verilog</h3>
-
-<figure class='code'><figcaption><span> (decoder38_9.v)</span> <a href='/downloads/code/decoder38/decoder38_9.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_9</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">assign</span> <span class="n">o_y</span> <span class="o">=</span> <span class="p">(</span><span class="n">i_opt</span> <span class="o">==</span> <span class="mh">1&#39;b1</span><span class="p">)</span> <span class="o">?</span> <span class="o">~</span><span class="p">(</span><span class="mh">8</span><span class="mi">&#39;d1</span> <span class="o">&lt;&lt;</span> <span class="n">i_sel</span><span class="p">)</span> <span class="o">:</span> <span class="p">(</span><span class="mh">8</span><span class="mi">&#39;d1</span> <span class="o">&lt;&lt;</span> <span class="n">i_sel</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Rtl</h3>
-
-<p>同上</p>
-
-<h2 id="decoder38_10">调用function</h2>
-
-
-<h3>Verilog</h3>
-
-<figure class='code'><figcaption><span> (decoder38_10.v)</span> <a href='/downloads/code/decoder38/decoder38_10.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_10</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="n">i_sel</span> <span class="k">or</span> <span class="n">i_opt</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">begin</span>
-</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="n">i_opt</span> <span class="o">==</span> <span class="mh">1&#39;b1</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">o_y</span> <span class="o">=</span> <span class="o">~</span><span class="n">base_decoder38</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">);</span>
-</span><span class='line'>            <span class="k">else</span>
-</span><span class='line'>                <span class="n">o_y</span> <span class="o">=</span> <span class="n">base_decoder38</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">);</span>
-</span><span class='line'>        <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">function</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">base_decoder38</span><span class="p">;</span>
-</span><span class='line'>        <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="k">begin</span>
-</span><span class='line'>            <span class="n">base_decoder38</span> <span class="o">=</span> <span class="o">~</span><span class="p">(</span><span class="mh">8</span><span class="mi">&#39;d1</span> <span class="o">&lt;&lt;</span> <span class="n">i_sel</span><span class="p">);</span>
-</span><span class='line'>        <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">endfunction</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Rtl</h3>
-
-<p>同上</p>
-
-<h2 id="decoder38_11">调用task</h2>
-
-
-<h3>Verilog</h3>
-
-<figure class='code'><figcaption><span> (decoder38_11.v)</span> <a href='/downloads/code/decoder38/decoder38_11.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_11</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>    <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="n">i_sel</span> <span class="k">or</span> <span class="n">i_opt</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">begin</span>
-</span><span class='line'>            <span class="n">base_decoder38</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">r_y</span><span class="p">);</span>
-</span><span class='line'>            <span class="n">o_y</span> <span class="o">=</span> <span class="p">(</span><span class="n">i_opt</span> <span class="o">==</span> <span class="mh">1</span><span class="p">)</span> <span class="o">?</span> <span class="o">~</span><span class="n">r_y</span> <span class="o">:</span> <span class="n">r_y</span><span class="p">;</span>
-</span><span class='line'>        <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">task</span> <span class="n">base_decoder38</span><span class="p">;</span>
-</span><span class='line'>        <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>        <span class="k">output</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="k">begin</span>
-</span><span class='line'>            <span class="n">o_y</span> <span class="o">=</span> <span class="o">~</span><span class="p">(</span><span class="mh">8</span><span class="mi">&#39;d1</span> <span class="o">&lt;&lt;</span> <span class="n">i_sel</span><span class="p">);</span>
-</span><span class='line'>        <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">endtask</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Rtl</h3>
-
-<p>同上</p>
-
-<h2 id="decoder38_12">调用module</h2>
-
-
-<h3>Verilog</h3>
-
-<figure class='code'><figcaption><span> (decoder38_12.v)</span> <a href='/downloads/code/decoder38/decoder38_12.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_12</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>    <span class="kt">wire</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">w_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">assign</span> <span class="n">o_y</span> <span class="o">=</span> <span class="p">(</span><span class="n">i_opt</span> <span class="o">==</span> <span class="mh">1&#39;b1</span><span class="p">)</span> <span class="o">?</span> <span class="o">~</span><span class="n">w_y</span> <span class="o">:</span> <span class="n">w_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">decoder38_12_base</span> <span class="n">decoder38_12_base_entity</span> <span class="p">(.</span><span class="n">i_sel</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">),</span> <span class="p">.</span><span class="n">o_y</span> <span class="p">(</span><span class="n">w_y</span><span class="p">));</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<figure class='code'><figcaption><span> (decoder38_12_base.v)</span> <a href='/downloads/code/decoder38/decoder38_12_base.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_12_base</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">begin</span>
-</span><span class='line'>            <span class="k">case</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">)</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d0</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1110</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d1</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1101</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d2</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1011</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d3</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_0111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d4</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1110</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d5</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1101</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d6</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1011</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d7</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b0111</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="k">default</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">endcase</span>
-</span><span class='line'>        <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Rtl</h3>
-
-<p><img src="/images/Blog/38%20decoder/decoder_12_rtl.png" alt="image" />
-<img src="/images/Blog/38%20decoder/decoder_12_base_rtl.png" alt="image" /></p>
-
-<h2 id="decoder38_13">原理图方式</h2>
-
-
-<p>好久没画原理图了，在Quartus中画原理图又让我找回了一点点感觉，特意增加了链接，点击可直接查看大图。</p>
-
-<h3>原理图</h3>
-
-<p><a href="/images/Blog/38%20decoder/decoder_13_bdf.png"><img src="/images/Blog/38%20decoder/decoder_13_bdf.png" alt="image" /></a></p>
-
-<h3>Rtl</h3>
-
-<p><img src="/images/Blog/38%20decoder/decoder_13_rtl.png" alt="image" /></p>
-
-<h2 id="decoder38_14">真值表描述</h2>
-
-
-<p>不知道以前是在哪看到的，说Quartus支持真值表文件描述，结果到写的时侯，找了一圈，才发现Quartus没有这个功能，好在，搜索的过程中发现AHDL支持真值表描述，于是我就用AHDL写了一个，写完后突然想起来，其实Verilog也有类似的写法，于是我又用Verilog写了一个。两种语言的写法很相似，它们生成的Rtl也是一样的。可以发现，用真值表描述，电路最简。（由于<code>pygments</code>和<code>gist</code>都不支持AHDL语言，所以AHDL代码没有语法高亮。）</p>
-
-<h3>AHDL</h3>
-
-<figure class='code'><figcaption><span>(decoder38_14.tdf)</span><a href='http://postget.me/downloads/code/decoder38/decoder38_14.tdf'>download </a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-</pre></td><td class='code'><pre><code class='text'><span class='line'>SUBDESIGN decoder38_14
-</span><span class='line'>(
-</span><span class='line'>    i_sel[2..0] : INPUT;
-</span><span class='line'>    i_opt : INPUT;
-</span><span class='line'>    o_y[7..0] : OUTPUT;
-</span><span class='line'>)
-</span><span class='line'>
-</span><span class='line'>BEGIN
-</span><span class='line'>    TABLE
-</span><span class='line'>        i_sel[2..0], i_opt =&gt; o_y[7..0];
-</span><span class='line'>        0, 0 =&gt; B&quot;11111110&quot;;
-</span><span class='line'>        1, 0 =&gt; B&quot;11111101&quot;;
-</span><span class='line'>        2, 0 =&gt; B&quot;11111011&quot;;
-</span><span class='line'>        3, 0 =&gt; B&quot;11110111&quot;;
-</span><span class='line'>        4, 0 =&gt; B&quot;11101111&quot;;
-</span><span class='line'>        5, 0 =&gt; B&quot;11011111&quot;;
-</span><span class='line'>        6, 0 =&gt; B&quot;10111111&quot;;
-</span><span class='line'>        7, 0 =&gt; B&quot;01111111&quot;;
-</span><span class='line'>        0, 1 =&gt; B&quot;00000001&quot;;
-</span><span class='line'>        1, 1 =&gt; B&quot;00000010&quot;;
-</span><span class='line'>        2, 1 =&gt; B&quot;00000100&quot;;
-</span><span class='line'>        3, 1 =&gt; B&quot;00001000&quot;;
-</span><span class='line'>        4, 1 =&gt; B&quot;00010000&quot;;
-</span><span class='line'>        5, 1 =&gt; B&quot;00100000&quot;;
-</span><span class='line'>        6, 1 =&gt; B&quot;01000000&quot;;
-</span><span class='line'>        7, 1 =&gt; B&quot;10000000&quot;;
-</span><span class='line'>    END TABLE;
-</span><span class='line'>
-</span><span class='line'>END;
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Verilog</h3>
-
-<figure class='code'><figcaption><span> (decoder38_14.v)</span> <a href='/downloads/code/decoder38/decoder38_14.v'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">decoder38_14_2</span> <span class="p">(</span><span class="n">i_sel</span><span class="p">,</span> <span class="n">i_opt</span><span class="p">,</span> <span class="n">o_y</span><span class="p">);</span>
-</span><span class='line'>    <span class="k">input</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">i_sel</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">input</span> <span class="n">i_opt</span><span class="p">;</span>
-</span><span class='line'>    <span class="k">output</span> <span class="kt">reg</span> <span class="p">[</span><span class="mh">7</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">o_y</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="n">i_sel</span> <span class="k">or</span> <span class="n">i_opt</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">begin</span>
-</span><span class='line'>            <span class="k">case</span> <span class="p">({</span><span class="n">i_sel</span><span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">],</span> <span class="n">i_opt</span><span class="p">})</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d0</span><span class="p">,</span> <span class="mh">1&#39;b0</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1110</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d1</span><span class="p">,</span> <span class="mh">1&#39;b0</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1101</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d2</span><span class="p">,</span> <span class="mh">1&#39;b0</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_1011</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d3</span><span class="p">,</span> <span class="mh">1&#39;b0</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1111</span><span class="n">_0111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d4</span><span class="p">,</span> <span class="mh">1&#39;b0</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1110</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d5</span><span class="p">,</span> <span class="mh">1&#39;b0</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1101</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d6</span><span class="p">,</span> <span class="mh">1&#39;b0</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1011</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d7</span><span class="p">,</span> <span class="mh">1&#39;b0</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b0111</span><span class="n">_1111</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d0</span><span class="p">,</span> <span class="mh">1&#39;b1</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b0000</span><span class="n">_0001</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d1</span><span class="p">,</span> <span class="mh">1&#39;b1</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b0000</span><span class="n">_0010</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d2</span><span class="p">,</span> <span class="mh">1&#39;b1</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b0000</span><span class="n">_0100</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d3</span><span class="p">,</span> <span class="mh">1&#39;b1</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b0000</span><span class="n">_1000</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d4</span><span class="p">,</span> <span class="mh">1&#39;b1</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b0001</span><span class="n">_0000</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d5</span><span class="p">,</span> <span class="mh">1&#39;b1</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b0010</span><span class="n">_0000</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d6</span><span class="p">,</span> <span class="mh">1&#39;b1</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b0100</span><span class="n">_0000</span><span class="p">;</span>
-</span><span class='line'>                <span class="mh">3</span><span class="mi">&#39;d7</span><span class="p">,</span> <span class="mh">1&#39;b1</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;b1000</span><span class="n">_0000</span><span class="p">;</span>
-</span><span class='line'>                <span class="k">default</span><span class="o">:</span> <span class="n">o_y</span> <span class="o">=</span> <span class="mh">8&#39;hff</span><span class="p">;</span>
-</span><span class='line'>            <span class="k">endcase</span>
-</span><span class='line'>        <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">endmodule</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Rtl</h3>
-
-<p><img src="/images/Blog/38%20decoder/decoder_14_rtl.png" alt="image" /></p>
-
-<h2 id="decoder38_15">门级描述</h2>
-
-
-<h3>Verilog</h3>
-
-<p>太复杂，不写了。</p>
-
-<h3>Rtl</h3>
-
-<p>同上。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/2/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -2994,6 +2135,10 @@ Clicked Counts: 14652</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/06/10/leave-my-job-for-one-month/">离职一个月</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2015/02/16/my-2014/">2014年终总结</a>
@@ -3009,10 +2154,6 @@ Clicked Counts: 14652</p>
     
       <li class="post">
         <a href="/blog/2014/05/07/7-years/">7年前的文章7年前的自己</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/02/16/translate-why-i-dropped-out-of-yc/">翻译《Why I Dropped Out of YC》</a>
       </li>
     
   </ul>

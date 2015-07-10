@@ -4,7 +4,7 @@
   <title><![CDATA[postget]]></title>
   <link href="http://postget.me/atom.xml" rel="self"/>
   <link href="http://postget.me/"/>
-  <updated>2015-02-16T05:36:43+08:00</updated>
+  <updated>2015-07-10T22:35:40+08:00</updated>
   <id>http://postget.me/</id>
   <author>
     <name><![CDATA[MeiLin]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[离职一个月]]></title>
+    <link href="http://postget.me/blog/2015/06/10/leave-my-job-for-one-month/"/>
+    <updated>2015-06-10T21:56:00+08:00</updated>
+    <id>http://postget.me/blog/2015/06/10/leave-my-job-for-one-month</id>
+    <content type="html"><![CDATA[<p><img src="http://postget.me/images/Blog/leave%20my%20job/1.JPG" alt="image" /></p>
+
+<p>明天要回去老家玩一段时间喽。</p>
+
+<p>从5月4号离职到今天，这一个月的时间里，真是太自由自在了：</p>
+
+<ul>
+<li><p>先是把谷歌地球转了两天，思考何去何从，哈哈哈，开玩笑的。其实是为了学习基础的地理知识，以及把一些重要的地方标记一下。</p></li>
+<li><p>练习了几天英语听力，每天听一段2~5分钟的英语视频，反复听，直到实在听不清，再看字幕。</p></li>
+<li><p>把经典电影梳理了一遍，把以前漏掉的或是印象不深的补看了一遍，如：威尼斯商人、傲慢与偏见等。</p></li>
+<li><p>花了一天时间把这一两年的歌曲草草的整理了一下。</p></li>
+<li><p>听了3天3夜的蒋勋讲红楼梦，后面又断断续续听，现在听到了二十多回。</p></li>
+<li><p>把高晓松的大航海重新看了一遍，又看了央视的大国崛起记录片加以补充。</p></li>
+<li><p>花了500块钱，核了个公司名，核名通过了，哈哈，深圳市规格电子有限公司。</p></li>
+</ul>
+
+
+<p><img src="http://postget.me/images/Blog/leave%20my%20job/2.JPG" alt="image" /></p>
+
+<ul>
+<li><p>近代史、党史、长征脉络梳理了一遍。</p></li>
+<li><p>学习了思客教学的CSS课程；了解了一下React（React组件与jQuery插件相比，多了UI规范和DOM渲染机制。）；决定学用jQuery。</p></li>
+<li><p>最近一个星期，每天爬到山顶吹风。爬山有点累，但爬到山顶后有大风吹，有汽水喝，有风景看，感觉真好。</p></li>
+</ul>
+
+
+<p><img src="http://postget.me/images/Blog/leave%20my%20job/3.JPG" alt="image" /></p>
+
+<ul>
+<li>保持良好心态：不断学习，了解世界，锻炼身体，可持续发展；机会永远都会有，只怕实力不够。</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[2014年终总结]]></title>
