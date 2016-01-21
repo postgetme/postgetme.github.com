@@ -9,7 +9,28 @@
   <meta name="author" content="MeiLin">
 
   
-  <meta name="description" content="本文我不断变换写法来实现一个38译码器，目的只是想通过此过程来快速的学习Verilog语法要点。为了实现更多的写法变化以及覆盖更多的Verilog语法要点，我给通常的38译码器增加了一个`i_opt`信号用来控制输出是否反转。这些写法都是可综合的，并且通过了开发板验证。 索引 标准写法 &hellip;">
+  <meta name="description" content="索引 D触发器2分频
+计数器2分频
+D触发器4分频
+计数器4分频
+计数器6分频写法1
+计数器6分频写法2
+非等占空比3分频
+等占空比3分频 D触发器2分频 Verilog (divider_1.v) download 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+module &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +99,616 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/11/divider/">分频器总结</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-11T15:17:00+08:00" pubdate data-updated="true">Aug 11<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/11/divider/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>索引</h2>
+
+<ul>
+<li><a href="#divider_1">D触发器2分频</a></li>
+<li><a href="#divider_2">计数器2分频</a></li>
+<li><a href="#divider_3">D触发器4分频</a></li>
+<li><a href="#divider_4">计数器4分频</a></li>
+<li><a href="#divider_5">计数器6分频写法1</a></li>
+<li><a href="#divider_6">计数器6分频写法2</a></li>
+<li><a href="#divider_7">非等占空比3分频</a></li>
+<li><a href="#divider_8">等占空比3分频</a></li>
+</ul>
+
+
+<h2 id="divider_1">D触发器2分频</h2>
+
+
+<h3>Verilog</h3>
+
+<figure class='code'><figcaption><span> (divider_1.v)</span> <a href='/downloads/code/divider/divider_1.v'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">divider_1</span> <span class="p">(</span><span class="n">i_clk</span><span class="p">,</span> <span class="n">i_rst_n</span><span class="p">,</span> <span class="n">o_div_clk</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_clk</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_rst_n</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">output</span> <span class="kt">reg</span> <span class="n">o_div_clk</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="k">posedge</span> <span class="n">i_clk</span> <span class="k">or</span> <span class="k">negedge</span> <span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">begin</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">o_div_clk</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">else</span>
+</span><span class='line'>                <span class="n">o_div_clk</span> <span class="o">&lt;=</span> <span class="o">~</span><span class="n">o_div_clk</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">endmodule</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Rtl</h3>
+
+<p><img src="/images/Blog/divider/divider_1_rtl.png" alt="image" /></p>
+
+<h3>Simulation</h3>
+
+<p><img src="/images/Blog/divider/divider_1_simulation.png" alt="image" /></p>
+
+<h2 id="divider_2">计数器2分频</h2>
+
+
+<h3>Verilog</h3>
+
+<figure class='code'><figcaption><span> (divider_2.v)</span> <a href='/downloads/code/divider/divider_2.v'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">divider_2</span> <span class="p">(</span><span class="n">i_clk</span><span class="p">,</span> <span class="n">i_rst_n</span><span class="p">,</span> <span class="n">o_div_clk</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_clk</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_rst_n</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">output</span> <span class="n">o_div_clk</span><span class="p">;</span>
+</span><span class='line'>    <span class="kt">reg</span> <span class="n">r_cnt</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="k">posedge</span> <span class="n">i_clk</span> <span class="k">or</span> <span class="k">negedge</span> <span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">begin</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">r_cnt</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">else</span>
+</span><span class='line'>                <span class="n">r_cnt</span> <span class="o">&lt;=</span> <span class="n">r_cnt</span> <span class="o">+</span> <span class="mh">1&#39;b1</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">assign</span> <span class="n">o_div_clk</span> <span class="o">=</span> <span class="n">r_cnt</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">endmodule</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Rtl</h3>
+
+<p><img src="/images/Blog/divider/divider_2_rtl.png" alt="image" /></p>
+
+<h3>Simulation</h3>
+
+<p><img src="/images/Blog/divider/divider_2_simulation.png" alt="image" /></p>
+
+<h2 id="divider_3">D触发器4分频</h2>
+
+
+<h3>Verilog</h3>
+
+<figure class='code'><figcaption><span> (divider_3.v)</span> <a href='/downloads/code/divider/divider_3.v'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">divider_3</span> <span class="p">(</span><span class="n">i_clk</span><span class="p">,</span> <span class="n">i_rst_n</span><span class="p">,</span> <span class="n">o_div_clk</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_clk</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_rst_n</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">output</span> <span class="kt">reg</span> <span class="n">o_div_clk</span><span class="p">;</span>
+</span><span class='line'>    <span class="kt">reg</span> <span class="n">r_temp_clk</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="k">posedge</span> <span class="n">i_clk</span> <span class="k">or</span> <span class="k">negedge</span> <span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">begin</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>                <span class="k">begin</span>
+</span><span class='line'>                    <span class="n">o_div_clk</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>                    <span class="n">r_temp_clk</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">end</span>
+</span><span class='line'>            <span class="k">else</span>
+</span><span class='line'>                <span class="k">begin</span>
+</span><span class='line'>                    <span class="n">o_div_clk</span> <span class="o">&lt;=</span> <span class="n">r_temp_clk</span><span class="p">;</span>
+</span><span class='line'>                    <span class="n">r_temp_clk</span> <span class="o">&lt;=</span> <span class="o">~</span><span class="n">o_div_clk</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">end</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">endmodule</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Rtl</h3>
+
+<p><img src="/images/Blog/divider/divider_3_rtl.png" alt="image" /></p>
+
+<h3>Simulation</h3>
+
+<p><img src="/images/Blog/divider/divider_3_simulation.png" alt="image" /></p>
+
+<h2 id="divider_4">计数器4分频</h2>
+
+
+<h3>Verilog</h3>
+
+<figure class='code'><figcaption><span> (divider_4.v)</span> <a href='/downloads/code/divider/divider_4.v'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">divider_4</span> <span class="p">(</span><span class="n">i_clk</span><span class="p">,</span> <span class="n">i_rst_n</span><span class="p">,</span> <span class="n">o_div_clk</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_clk</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_rst_n</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">output</span> <span class="n">o_div_clk</span><span class="p">;</span>
+</span><span class='line'>    <span class="kt">reg</span> <span class="p">[</span><span class="mh">1</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">r_cnt</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="k">posedge</span> <span class="n">i_clk</span> <span class="k">or</span> <span class="k">negedge</span> <span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">begin</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">r_cnt</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">else</span>
+</span><span class='line'>                <span class="n">r_cnt</span> <span class="o">&lt;=</span> <span class="n">r_cnt</span> <span class="o">+</span> <span class="mh">1&#39;b1</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">assign</span> <span class="n">o_div_clk</span> <span class="o">=</span> <span class="n">r_cnt</span><span class="p">[</span><span class="mh">1</span><span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">endmodule</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Rtl</h3>
+
+<p><img src="/images/Blog/divider/divider_4_rtl.png" alt="image" /></p>
+
+<h3>Simulation</h3>
+
+<p><img src="/images/Blog/divider/divider_4_simulation.png" alt="image" /></p>
+
+<h2 id="divider_5">计数器6分频写法1</h2>
+
+
+<h3>Verilog</h3>
+
+<figure class='code'><figcaption><span> (divider_5.v)</span> <a href='/downloads/code/divider/divider_5.v'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">divider_5</span> <span class="p">(</span><span class="n">i_clk</span><span class="p">,</span> <span class="n">i_rst_n</span><span class="p">,</span> <span class="n">o_div_clk</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_clk</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_rst_n</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">output</span> <span class="kt">reg</span> <span class="n">o_div_clk</span><span class="p">;</span>
+</span><span class='line'>    <span class="kt">reg</span> <span class="p">[</span><span class="mh">1</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">r_cnt</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="k">posedge</span> <span class="n">i_clk</span> <span class="k">or</span> <span class="k">negedge</span> <span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">begin</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>                <span class="k">begin</span>
+</span><span class='line'>                    <span class="n">o_div_clk</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>                    <span class="n">r_cnt</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">end</span>
+</span><span class='line'>            <span class="k">else</span>
+</span><span class='line'>                <span class="k">begin</span>
+</span><span class='line'>                    <span class="k">if</span> <span class="p">(</span><span class="n">r_cnt</span> <span class="o">&lt;</span> <span class="mh">2</span><span class="p">)</span>
+</span><span class='line'>                        <span class="n">r_cnt</span> <span class="o">&lt;=</span> <span class="n">r_cnt</span> <span class="o">+</span> <span class="mh">1&#39;b1</span><span class="p">;</span>
+</span><span class='line'>                    <span class="k">else</span>
+</span><span class='line'>                        <span class="k">begin</span>
+</span><span class='line'>                            <span class="n">o_div_clk</span> <span class="o">&lt;=</span> <span class="o">~</span><span class="n">o_div_clk</span><span class="p">;</span>
+</span><span class='line'>                            <span class="n">r_cnt</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>                        <span class="k">end</span>
+</span><span class='line'>                <span class="k">end</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">endmodule</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Rtl</h3>
+
+<p><img src="/images/Blog/divider/divider_5_rtl.png" alt="image" /></p>
+
+<h3>Simulation</h3>
+
+<p><img src="/images/Blog/divider/divider_5_simulation.png" alt="image" /></p>
+
+<h2 id="divider_6">计数器6分频写法2</h2>
+
+
+<h3>Verilog</h3>
+
+<figure class='code'><figcaption><span> (divider_6.v)</span> <a href='/downloads/code/divider/divider_6.v'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">divider_6</span> <span class="p">(</span><span class="n">i_clk</span><span class="p">,</span> <span class="n">i_rst_n</span><span class="p">,</span> <span class="n">o_div_clk</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_clk</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_rst_n</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">output</span> <span class="kt">reg</span> <span class="n">o_div_clk</span><span class="p">;</span>
+</span><span class='line'>    <span class="kt">reg</span> <span class="p">[</span><span class="mh">2</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">r_cnt</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="k">posedge</span> <span class="n">i_clk</span> <span class="k">or</span> <span class="k">negedge</span> <span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">begin</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">r_cnt</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">else</span>
+</span><span class='line'>                <span class="k">if</span> <span class="p">(</span><span class="n">r_cnt</span> <span class="o">==</span> <span class="mh">5</span><span class="p">)</span>
+</span><span class='line'>                    <span class="n">r_cnt</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">else</span>
+</span><span class='line'>                    <span class="n">r_cnt</span> <span class="o">&lt;=</span> <span class="n">r_cnt</span> <span class="o">+</span> <span class="mh">1&#39;b1</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="k">posedge</span> <span class="n">i_clk</span> <span class="k">or</span> <span class="k">negedge</span> <span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">begin</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">o_div_clk</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">else</span>
+</span><span class='line'>                <span class="k">if</span> <span class="p">(</span><span class="n">r_cnt</span> <span class="o">&lt;=</span> <span class="mh">2</span><span class="p">)</span>
+</span><span class='line'>                    <span class="n">o_div_clk</span> <span class="o">&lt;=</span> <span class="mh">1</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">else</span>
+</span><span class='line'>                    <span class="n">o_div_clk</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">endmodule</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Rtl</h3>
+
+<p><img src="/images/Blog/divider/divider_6_rtl.png" alt="image" /></p>
+
+<h3>Simulation</h3>
+
+<p><img src="/images/Blog/divider/divider_6_simulation.png" alt="image" /></p>
+
+<h2 id="divider_7">非等占空比3分频</h2>
+
+
+<h3>Verilog</h3>
+
+<figure class='code'><figcaption><span> (divider_7.v)</span> <a href='/downloads/code/divider/divider_7.v'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">divider_7</span> <span class="p">(</span><span class="n">i_clk</span><span class="p">,</span> <span class="n">i_rst_n</span><span class="p">,</span> <span class="n">o_div_clk</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_clk</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_rst_n</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">output</span> <span class="kt">reg</span> <span class="n">o_div_clk</span><span class="p">;</span>
+</span><span class='line'>    <span class="kt">reg</span> <span class="p">[</span><span class="mh">1</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">r_cnt</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="k">posedge</span> <span class="n">i_clk</span> <span class="k">or</span> <span class="k">negedge</span> <span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">begin</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">r_cnt</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">else</span>
+</span><span class='line'>                <span class="k">if</span> <span class="p">(</span><span class="n">r_cnt</span> <span class="o">==</span> <span class="mh">2</span><span class="p">)</span>
+</span><span class='line'>                    <span class="n">r_cnt</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">else</span>
+</span><span class='line'>                    <span class="n">r_cnt</span> <span class="o">&lt;=</span> <span class="n">r_cnt</span> <span class="o">+</span> <span class="mh">1&#39;b1</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="k">posedge</span> <span class="n">i_clk</span> <span class="k">or</span> <span class="k">negedge</span> <span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">begin</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">o_div_clk</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">else</span>
+</span><span class='line'>                <span class="k">if</span> <span class="p">(</span><span class="n">r_cnt</span> <span class="o">&lt;=</span> <span class="mh">1</span><span class="p">)</span>
+</span><span class='line'>                    <span class="n">o_div_clk</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">else</span>
+</span><span class='line'>                    <span class="n">o_div_clk</span> <span class="o">&lt;=</span> <span class="mh">1</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">endmodule</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Rtl</h3>
+
+<p><img src="/images/Blog/divider/divider_7_rtl.png" alt="image" /></p>
+
+<h3>Simulation</h3>
+
+<p><img src="/images/Blog/divider/divider_7_simulation.png" alt="image" /></p>
+
+<h2 id="divider_8">等占空比3分频</h2>
+
+
+<h3>Verilog</h3>
+
+<figure class='code'><figcaption><span> (divider_8.v)</span> <a href='/downloads/code/divider/divider_8.v'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+</pre></td><td class='code'><pre><code class='v'><span class='line'><span class="k">module</span> <span class="n">divider_8</span> <span class="p">(</span><span class="n">i_clk</span><span class="p">,</span> <span class="n">i_rst_n</span><span class="p">,</span> <span class="n">o_div_clk</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_clk</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">input</span> <span class="n">i_rst_n</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">output</span> <span class="n">o_div_clk</span><span class="p">;</span>
+</span><span class='line'>    <span class="kt">reg</span> <span class="p">[</span><span class="mh">1</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span> <span class="n">r_cnt1</span><span class="p">,</span> <span class="n">r_cnt2</span><span class="p">;</span>   <span class="c1">//change registers width when K changed </span>
+</span><span class='line'>    <span class="kt">reg</span> <span class="n">r_clk1</span><span class="p">,</span> <span class="n">r_clk2</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">//3=2K+1,K=1</span>
+</span><span class='line'>    <span class="k">parameter</span> <span class="no">K</span> <span class="o">=</span> <span class="mh">1</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">//posedge</span>
+</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="k">posedge</span> <span class="n">i_clk</span> <span class="k">or</span> <span class="k">negedge</span> <span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">begin</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>              <span class="n">r_cnt1</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">else</span>
+</span><span class='line'>                <span class="k">if</span> <span class="p">(</span><span class="n">r_cnt1</span> <span class="o">==</span> <span class="mh">2</span> <span class="o">*</span> <span class="no">K</span><span class="p">)</span>
+</span><span class='line'>                    <span class="n">r_cnt1</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">else</span>
+</span><span class='line'>                    <span class="n">r_cnt1</span> <span class="o">&lt;=</span> <span class="n">r_cnt1</span> <span class="o">+</span> <span class="mh">1&#39;b1</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="k">posedge</span> <span class="n">i_clk</span> <span class="k">or</span> <span class="k">negedge</span> <span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">begin</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">r_clk1</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">else</span>
+</span><span class='line'>                <span class="k">if</span> <span class="p">(</span><span class="n">r_cnt1</span> <span class="o">==</span> <span class="no">K</span> <span class="o">-</span> <span class="mh">1</span><span class="p">)</span>
+</span><span class='line'>                    <span class="n">r_clk1</span> <span class="o">&lt;=</span> <span class="mh">1</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">r_cnt1</span> <span class="o">==</span> <span class="mh">2</span> <span class="o">*</span> <span class="no">K</span><span class="p">)</span>
+</span><span class='line'>                    <span class="n">r_clk1</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">//negedge</span>
+</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="k">negedge</span> <span class="n">i_clk</span> <span class="k">or</span> <span class="k">negedge</span> <span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">begin</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>              <span class="n">r_cnt2</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">else</span>
+</span><span class='line'>              <span class="k">if</span> <span class="p">(</span><span class="n">r_cnt2</span> <span class="o">==</span> <span class="mh">2</span> <span class="o">*</span> <span class="no">K</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">r_cnt2</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>              <span class="k">else</span>
+</span><span class='line'>                <span class="n">r_cnt2</span> <span class="o">&lt;=</span> <span class="n">r_cnt2</span> <span class="o">+</span> <span class="mh">1&#39;b1</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">always</span> <span class="p">@</span> <span class="p">(</span><span class="k">negedge</span> <span class="n">i_clk</span> <span class="k">or</span> <span class="k">negedge</span> <span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">begin</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">i_rst_n</span><span class="p">)</span>
+</span><span class='line'>              <span class="n">r_clk2</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>            <span class="k">else</span>
+</span><span class='line'>                <span class="k">if</span> <span class="p">(</span><span class="n">r_cnt2</span> <span class="o">==</span> <span class="no">K</span> <span class="o">-</span> <span class="mh">1</span><span class="p">)</span>
+</span><span class='line'>                    <span class="n">r_clk2</span> <span class="o">&lt;=</span> <span class="mh">1</span><span class="p">;</span>
+</span><span class='line'>                <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">r_cnt2</span> <span class="o">==</span> <span class="mh">2</span> <span class="o">*</span> <span class="no">K</span><span class="p">)</span>
+</span><span class='line'>                    <span class="n">r_clk2</span> <span class="o">&lt;=</span> <span class="mh">0</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">assign</span> <span class="n">o_div_clk</span> <span class="o">=</span> <span class="n">r_clk1</span> <span class="o">&amp;</span> <span class="n">r_clk2</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">endmodule</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Rtl</h3>
+
+<p><img src="/images/Blog/divider/divider_8_rtl.png" alt="image" /></p>
+
+<h3>Simulation</h3>
+
+<p><img src="/images/Blog/divider/divider_8_simulation.png" alt="image" /></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1025,6 +1656,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2016/01/21/zhi-wei-zai-ren-jian/">《至味在人间》小记</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/06/10/leave-my-job-for-one-month/">离职一个月</a>
       </li>
     
@@ -1040,10 +1675,6 @@
         <a href="/blog/2014/05/25/t1/">看《2014锤子手机T1发布会》的35点总结</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2014/05/07/7-years/">7年前的文章7年前的自己</a>
-      </li>
-    
   </ul>
 </section>
 
@@ -1057,7 +1688,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - MeiLin -
+  Copyright &copy; 2016 - MeiLin -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
