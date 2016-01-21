@@ -25,7 +25,7 @@ background-color: #3a87ad;
 }
 </style>
 
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/video%20sharing/video%20sharing.jpg)
+![image](/images/Blog/video sharing/video sharing.jpg)
 
 从去年9月份开始，我在公司内部的英语学习社区“英语圈”中每天都分享了一个或是多个视频，到今天为止大概发了250个，点击量累计超过10000。这些视频的内容多数是欧美MV，也有一些励志短片、广告、宣传片、影视片段等。为了便于英语学习，我所挑选的这些视频大部分都带有中英文字幕。
 

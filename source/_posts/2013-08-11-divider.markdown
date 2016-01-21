@@ -23,10 +23,10 @@ categories: verilog fpga
 {% include_code divider/divider_1.v%}
 
 ###Rtl
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_1_rtl.png)
+![image](/images/Blog/divider/divider_1_rtl.png)
 
 ###Simulation
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_1_simulation.png)
+![image](/images/Blog/divider/divider_1_simulation.png)
 
 <h2 id="divider_2">计数器2分频</h2>
 
@@ -34,10 +34,10 @@ categories: verilog fpga
 {% include_code divider/divider_2.v%}
 
 ###Rtl
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_2_rtl.png)
+![image](/images/Blog/divider/divider_2_rtl.png)
 
 ###Simulation
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_2_simulation.png)
+![image](/images/Blog/divider/divider_2_simulation.png)
 
 <h2 id="divider_3">D触发器4分频</h2>
 
@@ -45,10 +45,10 @@ categories: verilog fpga
 {% include_code divider/divider_3.v%}
 
 ###Rtl
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_3_rtl.png)
+![image](/images/Blog/divider/divider_3_rtl.png)
 
 ###Simulation
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_3_simulation.png)
+![image](/images/Blog/divider/divider_3_simulation.png)
 
 <h2 id="divider_4">计数器4分频</h2>
 
@@ -56,10 +56,10 @@ categories: verilog fpga
 {% include_code divider/divider_4.v%}
 
 ###Rtl
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_4_rtl.png)
+![image](/images/Blog/divider/divider_4_rtl.png)
 
 ###Simulation
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_4_simulation.png)
+![image](/images/Blog/divider/divider_4_simulation.png)
 
 <h2 id="divider_5">计数器6分频写法1</h2>
 
@@ -67,10 +67,10 @@ categories: verilog fpga
 {% include_code divider/divider_5.v%}
 
 ###Rtl
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_5_rtl.png)
+![image](/images/Blog/divider/divider_5_rtl.png)
 
 ###Simulation
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_5_simulation.png)
+![image](/images/Blog/divider/divider_5_simulation.png)
 
 <h2 id="divider_6">计数器6分频写法2</h2>
 
@@ -78,10 +78,10 @@ categories: verilog fpga
 {% include_code divider/divider_6.v%}
 
 ###Rtl
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_6_rtl.png)
+![image](/images/Blog/divider/divider_6_rtl.png)
 
 ###Simulation
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_6_simulation.png)
+![image](/images/Blog/divider/divider_6_simulation.png)
 
 <h2 id="divider_7">非等占空比3分频</h2>
 
@@ -89,10 +89,10 @@ categories: verilog fpga
 {% include_code divider/divider_7.v%}
 
 ###Rtl
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_7_rtl.png)
+![image](/images/Blog/divider/divider_7_rtl.png)
 
 ###Simulation
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_7_simulation.png)
+![image](/images/Blog/divider/divider_7_simulation.png)
 
 <h2 id="divider_8">等占空比3分频</h2>
 
@@ -100,7 +100,7 @@ categories: verilog fpga
 {% include_code divider/divider_8.v%}
 
 ###Rtl
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_8_rtl.png)
+![image](/images/Blog/divider/divider_8_rtl.png)
 
 ###Simulation
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/%E5%88%86%E9%A2%91%E5%99%A8/divider_8_simulation.png)
+![image](/images/Blog/divider/divider_8_simulation.png)

@@ -9,11 +9,11 @@ categories: verilog fpga
 做这个实验，前后准备了大概一个星期，先是搜集资料和熟悉资料，然后对比了几种不同的Verilog写法，最后考虑该怎么搭建环境验证。原本利用手头上已有的开发板是可以至少搭建出两种实验环境的，但我嫌太麻烦，需要飞很多线，所以最后还是在淘宝找来了现成的开发板，139元，周三拍的，周五收到，周六顺利完成实验。
 {% endblockquote %}
 
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/board.jpg)
+![image](/images/Blog/bus expand/board.jpg)
 
 ###引脚整理
 核心板加主板形式的开发板，很讨厌的一件事情就是查找引脚对应关系，正准备在纸上画个表格的，突然想起前不久看到过一个做表格的gem，正好可以拿来试试。弄了好半天都没有搞定怎么用Ruby把两个表格横向拼在一起，最后只好用了`paste`命令。
-[![image](https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/screen.png)](https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/screen.png)
+[![image](/images/Blog/bus expand/screen.png)](/images/Blog/bus expand/screen.png)
 
 ###CPU程序
 简单的测试程序。8051访问外部地址空间的写法搜集了一下，大概有3种，见注释掉的部分。
@@ -29,5 +29,5 @@ categories: verilog fpga
 
 ###Rtl
 看到Rtl才发现其实真的很简单。
-![image](https://dl.dropboxusercontent.com/u/128996895/Blog/bus_expand/bus_expand_rtl.png)
+![image](/images/Blog/bus expand/bus_expand_rtl.png)
 

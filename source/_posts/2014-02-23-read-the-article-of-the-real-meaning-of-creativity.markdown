@@ -3,7 +3,7 @@ layout: post
 title: "读王垠的《创造力的真正含义》有感"
 date: 2014-02-23 22:06
 comments: true
-categories: others
+categories: reading
 published: false
 ---
 
